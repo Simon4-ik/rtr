@@ -1,0 +1,67 @@
+{
+  "title": "1-para bo'yicha oraliq nazorat testi",
+  "totalQuestions": 5,
+  "passingScore": 60,
+  "questions": [
+    {
+      "id": "q1",
+      "question": "Axborot xavfsizligining CIA triadasiga qaysi uchta asosiy mezon kiradi?",
+      "options": [
+        "Maxfiylik, Yaxlitlik, Mavjudlik (Confidentiality, Integrity, Availability)",
+        "Avtorizatsiya, Autentifikatsiya, Hisobdorlik (AAA)",
+        "Shifrlash, Zaxiralash, Monitoring",
+        "Aniqlash, Himoyalash, Tiklash"
+      ],
+      "correctIndex": 0,
+      "explanation": "CIA modeli uchta asosiy ustundan iborat: Confidentiality (Maxfiylik), Integrity (Yaxlitlik) va Availability (Mavjudlik). Bu kiberxavfsizlikning fundamental poydevoridir."
+    },
+    {
+      "id": "q2",
+      "question": "DDoS hujumi natijasida veb-sayt foydalanuvchilar uchun ochilmay qolsa, CIA triadasining qaysi elementi buzilgan hisoblanadi?",
+      "options": [
+        "Maxfiylik (Confidentiality)",
+        "Yaxlitlik (Integrity)",
+        "Mavjudlik (Availability)",
+        "Autentifikatsiya (Authentication)"
+      ],
+      "correctIndex": 2,
+      "explanation": "DDoS (Distributed Denial of Service) hujumining asosiy maqsadi tizim resurslarini band qilib, uning qonuniy foydalanuvchilarga xizmat ko'rsatish qobiliyatini (Mavjudlikni) izdan chiqarishdir."
+    },
+    {
+      "id": "q3",
+      "question": "Kiberxavfsizlik va an'anaviy axborot xavfsizligi o'rtasidagi asosiy farq nima?",
+      "options": [
+        "Ular mutlaqo bir xil tushuncha bo'lib, hech qanday farqi yo'q",
+        "Axborot xavfsizligi har qanday shakldagi (qog'oz, og'zaki, raqamli) axborotni, kiberxavfsizlik esa asosan raqamli tizimlarni himoyalaydi",
+        "Kiberxavfsizlik faqat parollarni saqlash bilan shug'ullanadi",
+        "Axborot xavfsizligi faqat dasturiy ta'minotni tekshiradi"
+      ],
+      "correctIndex": 1,
+      "explanation": "Axborot xavfsizligi kengroq tushuncha bo'lib, axborotning barcha ko'rinishlarini (shu jumladan qog'oz hujjatlar va jismoniy arxivlarni) qamrab oladi. Kiberxavfsizlik esa raqamli kiber-fazodagi aktivlarni himoyalaydi."
+    },
+    {
+      "id": "q4",
+      "question": "«Chuqurlashtirilgan himoya» (Defense in Depth) konsepsiyasining asosiy maqsadi nima?",
+      "options": [
+        "Faqat bitta juda qimmatbaho firewall devorini o'rnatish",
+        "Bir-birini to'ldiruvchi ko'p pog'onali himoya to'siqlarini barpo etish",
+        "Foydalanuvchilarga internetdan foydalanishni butunlay taqiqlash",
+        "Barcha ma'lumotlarni faqat bitta kompyuterda saqlash"
+      ],
+      "correctIndex": 1,
+      "explanation": "Chuqurlashtirilgan himoya hech qachon bitta to'siqqa tayanmaslikni, bir qatlam buzilgan taqdirda ham keyingi qatlamlar (tarmoq, xost, ma'lumot, inson) hujumni to'xtatib qolishini ko'zda tutadi."
+    },
+    {
+      "id": "q5",
+      "question": "Ko'plab kiberxavfsizlik hodisalarida eng zaif bo'g'in deb nimaga aytiladi?",
+      "options": [
+        "Optik tolali aloqa kabellari",
+        "Zamonaviy kriptografik chiplar",
+        "Inson omili (ijtimoiy muhandislik, e'tiborsizlik, zaif parollar)",
+        "Elektr ta'minoti batareyalari"
+      ],
+      "correctIndex": 2,
+      "explanation": "Jahon kiberxavfsizlik hisobotlariga ko'ra, hodisalarning 80% dan ortig'i inson omili (fishingga aldanish, zaif parollar, kibergigiyenaga amal qilmaslik) sababli yuz beradi."
+    }
+  ]
+}

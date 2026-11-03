@@ -1,0 +1,66 @@
+{
+  "title": "1-para taqdimoti: Kiberxavfsizlik asoslari va yo'nalishlari",
+  "downloadUrl": "./content/para-01/presentation.pptx",
+  "fileSize": "4.2 MB",
+  "slides": [
+    {
+      "slideNumber": 1,
+      "title": "Kiberxavfsizlik faniga kirish",
+      "subtitle": "Fan kodi: TD-50610401 | 1-para",
+      "bullets": [
+        "Raqamli dunyo va axborotning strategik ahamiyati",
+        "Kiberxavfsizlik va axborot xavfsizligi o'rtasidagi bog'liqlik",
+        "O'quv kursining tuzilishi va baholash mezonlari"
+      ],
+      "speakerNotes": "Talabalarga fanning ahamiyati va kurs davomida egallanadigan amaliy ko'nikmalar haqida umumiy tushuncha berish."
+    },
+    {
+      "slideNumber": 2,
+      "title": "Axborot xavfsizligining CIA triadasi",
+      "subtitle": "Kiberxavfsizlik poydevori",
+      "bullets": [
+        "Maxfiylik (Confidentiality) — Faqat vakolatli shaxslarga ruxsat berish",
+        "Yaxlitlik (Integrity) — Ma'lumotlarni ruxsatsiz o'zgartirishdan saqlash",
+        "Mavjudlik (Availability) — Resurslarning doimiy uzluksiz ishlashini ta'minlash"
+      ],
+      "speakerNotes": "Har bir element bo'yicha hayotiy misol keltirish (masalan, bank parollari, balans summasi, bank ilovasi serveri)."
+    },
+    {
+      "slideNumber": 3,
+      "title": "Kiberxavfsizlik fanining asosiy vazifalari",
+      "subtitle": "Mutaxassis oldida turgan chaqiriqlar",
+      "bullets": [
+        "Tahdid va zaifliklarni o'z vaqtida aniqlash hamda tasniflash",
+        "Kriptografik vositalar va ERI texnologiyalarini joriy qilish",
+        "Xavfsiz tarmoq topologiyasi va perimetr himoyasini sozlash",
+        "Kiberinsidentlarga javob qaytarish va tizim barqarorligini tiklash"
+      ],
+      "speakerNotes": "Nazariy bilimlarni amaliy laboratoriya mashg'ulotlarida sinab ko'rish muhimligi ta'kidlanadi."
+    },
+    {
+      "slideNumber": 4,
+      "title": "Chuqurlashtirilgan himoya (Defense in Depth)",
+      "subtitle": "Ko'p pog'onali mudofaa strategiyasi",
+      "bullets": [
+        "1-qatlam: Jismoniy xavfsizlik (server xonalari, kameralar)",
+        "2-qatlam: Perimetr va tarmoq (Firewall, IDS/IPS, VPN)",
+        "3-qatlam: Tizim va xostlar (OS Hardening, EDR)",
+        "4-qatlam: Ilovalar va ma'lumotlar (Shifrlash, DLP)",
+        "5-qatlam: Inson omili (Xabardorlik, kibergigiyena)"
+      ],
+      "speakerNotes": "Hech qachon yagona himoya vositasiga ishonmaslik, har bir qatlam o'z vazifasini bajarishi kerakligini tushuntirish."
+    },
+    {
+      "slideNumber": 5,
+      "title": "Xulosa va amaliy vazifalar",
+      "subtitle": "1-para bo'yicha mustaqil topshiriqlar",
+      "bullets": [
+        "CIA triadasiga oid 3 ta real kiberhodisani tahlil qilish",
+        "Amaliyot bo'limidagi laboratoriya topshirig'ini bajarish",
+        "Mavzu yuzasidan nazorat testidan o'tish"
+      ],
+      "speakerNotes": "Keyingi 2-paraga tayyorgarlik ko'rish bo'yicha ko'rsatma beriladi."
+    }
+  ]
+}
+

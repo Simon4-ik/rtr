@@ -1,0 +1,206 @@
+{
+    "id": 1,
+    "title": "Kiberxavfsizlik fanining maqsadi, vazifalari va rivojlanish yoʻnalishlari",
+    "hours": 2,
+    "outcomes": [
+        "ON1"
+    ],
+    "goal": "Talaba kiberxavfsizlikning maqsadi, vazifalari va yoʻnalishlarini tushuntira oladi.",
+    "lectureFile": "lecture.md",
+    "methods": [
+        {
+            "name": "Aqliy hujum",
+            "stage": "Boshlanish (10 daqiqa)",
+            "description": "Talabalar 'Kundalik hayotda qanday raqamli xavflarga duch kelasiz?' savoliga imkon qadar koʻp javob yozadi, keyin javoblar guruhlanadi."
+        },
+        {
+            "name": "Keys-stadi",
+            "stage": "Asosiy qism (25 daqiqa)",
+            "description": "Kichik korxona hisobi parol zaifligi tufayli buzilgan holat tahlil qilinadi: sabab, oqibat, oldini olish."
+        },
+        {
+            "name": "Amaliy mashqlar va simulyatsiya",
+            "stage": "Amaliyot (30 daqiqa)",
+            "description": "Sahifadagi 'Maxfiylik-yaxlitlik-mavjudlik' simulyatori orqali har bir hodisa qaysi xususiyatga zarar yetkazganini aniqlash."
+        }
+    ],
+    "video": {
+        "file": "media/para-01.mp4",
+        "durationMin": 6,
+        "resolution": "1280x720",
+        "poster": "media/para-01.jpg"
+    },
+    "slides": {
+        "file": "slides/para-01.pdf",
+        "count": 12
+    },
+    "didactic": [
+        {
+            "type": "image",
+            "file": "didactic/cia-triad.png",
+            "caption": "Axborot xavfsizligining uch xususiyati"
+        }
+    ],
+    "practice": {
+        "title": "Hodisalarni tasniflash",
+        "task": "Quyidagi 6 hodisa uchun qaysi xususiyat (maxfiylik, yaxlitlik, mavjudlik) buzilganini aniqlang va sababini yozing.",
+        "items": [
+            "Xodim mijozlar roʻyxatini begona shaxsga yubordi.",
+            "Kimdir bazadagi narxlarni oʻzgartirib qoʻydi.",
+            "Server hujum tufayli 3 soat ishlamadi."
+        ]
+    },
+    "reviewQuestions": [
+        "Kiberxavfsizlik nima?",
+        "Kiberxavfsizlik va axborot xavfsizligi oʻrtasida qanday farq bor?",
+        "Maxfiylik, yaxlitlik va mavjudlikka bittadan misol keltiring.",
+        "Fanning asosiy vazifalarini sanab bering.",
+        "Nima uchun inson omili xavfsizlikning eng zaif boʻgʻini hisoblanadi?"
+    ],
+    "tests": [
+        {
+            "q": "Axborotga faqat ruxsati bor shaxslar kira olishi qaysi xususiyatga tegishli?",
+            "options": [
+                "Yaxlitlik",
+                "Maxfiylik",
+                "Mavjudlik",
+                "Tezkorlik"
+            ],
+            "answer": 1,
+            "explain": "Maxfiylik ruxsatsiz shaxslarning kirishini cheklaydi."
+        },
+        {
+            "q": "Axborot ruxsatsiz oʻzgartirilmasligi qaysi xususiyat?",
+            "options": [
+                "Yaxlitlik",
+                "Maxfiylik",
+                "Mavjudlik",
+                "Autentifikatsiya"
+            ],
+            "answer": 0,
+            "explain": "Yaxlitlik axborotning aniq va oʻzgarmaganligini bildiradi."
+        },
+        {
+            "q": "Server hujum tufayli ishlamay qolsa, qaysi xususiyat buziladi?",
+            "options": [
+                "Maxfiylik",
+                "Yaxlitlik",
+                "Mavjudlik",
+                "Shifrlash"
+            ],
+            "answer": 2,
+            "explain": "Xizmatdan kerak vaqtda foydalanib boʻlmaydi."
+        },
+        {
+            "q": "Kiberxavfsizlik asosan nimani himoyalaydi?",
+            "options": [
+                "Faqat qogʻoz hujjatlarni",
+                "Raqamli tizimlar va maʼlumotlarni",
+                "Faqat binolarni",
+                "Faqat xodimlarni"
+            ],
+            "answer": 1,
+            "explain": "Kiberxavfsizlik raqamli muhitga qaratilgan."
+        },
+        {
+            "q": "Axborot xavfsizligi va kiberxavfsizlik oʻrtasidagi toʻgʻri munosabat qaysi?",
+            "options": [
+                "Ular butunlay bir xil",
+                "Kiberxavfsizlik axborot xavfsizligining qismi",
+                "Axborot xavfsizligi kiberxavfsizlikning qismi",
+                "Ular bogʻliq emas"
+            ],
+            "answer": 1,
+            "explain": "Axborot xavfsizligi kengroq tushuncha."
+        },
+        {
+            "q": "Koʻp xavfsizlik hodisalarining asosiy sababi qaysi?",
+            "options": [
+                "Inson omili",
+                "Elektr uzilishi",
+                "Monitor turi",
+                "Klaviatura"
+            ],
+            "answer": 0,
+            "explain": "Zaif parol va fishingga ishonish keng tarqalgan."
+        },
+        {
+            "q": "'Chuqurlashtirilgan himoya' nimani anglatadi?",
+            "options": [
+                "Faqat bitta kuchli vosita",
+                "Texnik, tashkiliy va inson choralarining birgalikda qoʻllanishi",
+                "Faqat antivirus",
+                "Faqat parol"
+            ],
+            "answer": 1,
+            "explain": "Bir necha himoya qatlami birgalikda ishlaydi."
+        },
+        {
+            "q": "Qaysi biri fanning vazifasiga kiradi?",
+            "options": [
+                "Video montaj",
+                "Zaifliklarni aniqlash va bartaraf etish",
+                "Grafik dizayn",
+                "Buxgalteriya hisobi"
+            ],
+            "answer": 1,
+            "explain": "Bu ON2 bilan bogʻliq."
+        },
+        {
+            "q": "Quyidagilardan qaysi biri kiberxavfsizlik yoʻnalishi emas?",
+            "options": [
+                "Tarmoq xavfsizligi",
+                "Kriptografiya",
+                "Insidentlarga javob",
+                "Veb-sayt rangini tanlash"
+            ],
+            "answer": 3,
+            "explain": "Rang tanlash dizayn masalasi."
+        },
+        {
+            "q": "Mijozlar roʻyxati begonaga yuborilsa, qaysi xususiyat buziladi?",
+            "options": [
+                "Mavjudlik",
+                "Maxfiylik",
+                "Tezlik",
+                "Hajm"
+            ],
+            "answer": 1,
+            "explain": "Maxfiy maʼlumot ruxsatsiz shaxsga oshkor boʻldi."
+        }
+    ],
+    "glossary": [
+        {
+            "term": "Autentifikatsiya",
+            "def": "Foydalanuvchi yoki qurilma haqiqiyligini tekshirish jarayoni."
+        },
+        {
+            "term": "Axborot xavfsizligi",
+            "def": "Axborotni har qanday shaklda ruxsatsiz kirish, oʻzgartirish va yoʻq qilishdan himoya qilish."
+        },
+        {
+            "term": "Kiberxavfsizlik",
+            "def": "Raqamli tizimlar, tarmoqlar va maʼlumotlarni kiberhujumlardan himoya qilish chora-tadbirlari majmuasi."
+        },
+        {
+            "term": "Mavjudlik",
+            "def": "Axborot va xizmatlardan kerakli vaqtda foydalanish imkoniyati."
+        },
+        {
+            "term": "Maxfiylik",
+            "def": "Axborotga faqat ruxsat berilgan shaxslar kira olishi xususiyati."
+        },
+        {
+            "term": "Tahdid",
+            "def": "Axborot yoki tizimga zarar yetkazishi mumkin boʻlgan potensial xavf."
+        },
+        {
+            "term": "Yaxlitlik",
+            "def": "Axborotning ruxsatsiz oʻzgartirilmasligi va aniqligi saqlanishi xususiyati."
+        },
+        {
+            "term": "Zaiflik",
+            "def": "Tizimdagi tahdid foydalanishi mumkin boʻlgan kamchilik."
+        }
+    ]
+}

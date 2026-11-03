@@ -1,0 +1,12 @@
+{
+  "id": "para-01",
+  "number": 1,
+  "title": "Kiberxavfsizlik fanining maqsadi, vazifalari va rivojlanish yoʻnalishlari",
+  "hours": 2,
+  "category": "Asoslar",
+  "description": "Kiberxavfsizlik tushunchasi, fanning maqsadi, asosiy vazifalari hamda zamonaviy rivojlanish tendensiyalari. Axborot xavfsizligining uch asosi (CIA triadasi) va chuqurlashtirilgan himoya konsepsiyasi.",
+  "author": "Kiberxavfsizlik kafedrasi",
+  "recommendedReading": "ISO/IEC 27001 standarti, NIST SP 800-53, O'zbekiston Respublikasi «Kiberxavfsizlik to'g'risida»gi Qonuni.",
+  "hasVideo": true,
+  "hasQuiz": true
+}

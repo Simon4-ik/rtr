@@ -1,0 +1,48 @@
+[
+  {
+    "term": "Kiberxavfsizlik",
+    "enTerm": "Cybersecurity",
+    "definition": "Kiber-muhitdagi tizimlar, tarmoqlar, dasturlar va ma'lumotlarni ruxsatsiz kirish, zarar yetkazish yoki yo'q qilishdan himoyalovchi texnologiyalar, jarayonlar va amaliyotlar majmui."
+  },
+  {
+    "term": "Axborot xavfsizligi",
+    "enTerm": "Information Security (InfoSec)",
+    "definition": "Axborotning har qanday shaklida (raqamli, qog'oz, og'zaki) uning maxfiyligi, yaxlitligi va mavjudligini ta'minlashga qaratilgan umumiy tizim."
+  },
+  {
+    "term": "CIA triadasi",
+    "enTerm": "CIA Triad",
+    "definition": "Axborot xavfsizligining uchta asosiy ustuni: Maxfiylik (Confidentiality), Yaxlitlik (Integrity) va Mavjudlik (Availability) modeli."
+  },
+  {
+    "term": "Maxfiylik",
+    "enTerm": "Confidentiality",
+    "definition": "Axborot faqat vakolatli foydalanuvchilar va jarayonlar uchungina ochiq bo'lishi hamda ruxsatsiz shaxslardan yashirin saqlanishi holati."
+  },
+  {
+    "term": "Yaxlitlik",
+    "enTerm": "Integrity",
+    "definition": "Axborotning asl holatda saqlanishi, unga ruxsatsiz hech qanday o'zgartirish, buzish yoki qo'shimchalar kiritilmaganligining kafolati."
+  },
+  {
+    "term": "Mavjudlik",
+    "enTerm": "Availability",
+    "definition": "Axborot, tizim va xizmatlarning vakolatli foydalanuvchilar talabi bo'yicha doimo o'z vaqtida va to'siqsiz ish holatida bo'lishi."
+  },
+  {
+    "term": "Chuqurlashtirilgan himoya",
+    "enTerm": "Defense in Depth",
+    "definition": "Axborot tizimini himoyalashda bir-birini takrorlovchi va qo'shimcha qiluvchi ko'p pog'onali (perimetr, tarmoq, xost, ma'lumot, inson) to'siqlar majmuasi."
+  },
+  {
+    "term": "Zaiflik",
+    "enTerm": "Vulnerability",
+    "definition": "Axborot tizimi, dastur yoki apparat ta'minotidagi xavfsizlik kamchiligi bo'lib, hujumchi undan foydalanib tizimga suqilib kirishi mumkin."
+  },
+  {
+    "term": "Tahdid",
+    "enTerm": "Threat",
+    "definition": "Axborot tizimiga, tashkilotga yoki shaxsga zarar yetkazishi mumkin bo'lgan har qanday ehtimoliy xavf-xatar yoki salbiy hodisa."
+  }
+]
+

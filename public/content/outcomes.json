@@ -1,0 +1,35 @@
+[
+  {
+    "id": "ON1",
+    "code": "ON1",
+    "title": "Kiberxavfsizlik konseptual modeli va axborot xavfsizligi asoslari",
+    "description": "Axborot xavfsizligining CIA triadasi (Maxfiylik, Yaxlitlik, Mavjudlik), chuqurlashtirilgan himoya, me'yoriy-huquqiy baza va xalqaro standartlarni tushunish hamda qo'llash.",
+    "icon": "ShieldCheck",
+    "paraCount": 6
+  },
+  {
+    "id": "ON2",
+    "code": "ON2",
+    "title": "Tahdidlar, zaifliklar va tizim xavfsizligini ta'minlash",
+    "description": "Zararli dasturlar, ijtimoiy muhandislik, dasturiy zaifliklar (OWASP Top 10) va operatsion tizimlarni mustahkamlash (Hardening).",
+    "icon": "AlertTriangle",
+    "paraCount": 10
+  },
+  {
+    "id": "ON3",
+    "code": "ON3",
+    "title": "Kriptografiya, tarmoq xavfsizligi va kirishni boshqarish",
+    "description": "Simmetrik va asimmetrik shifrlash, xesh-funksiyalar, elektron raqamli imzo (ERI), PKI, Firewall, IDS/IPS va VPN konfiguratsiyasi.",
+    "icon": "Lock",
+    "paraCount": 8
+  },
+  {
+    "id": "ON4",
+    "code": "ON4",
+    "title": "Kiberhodisalarga javob berish, monitoring va xavfsizlik auditi",
+    "description": "SIEM, SOC monitoringi, insidentlarga tezkor javob qaytarish (IRP), zaxira nusxalash (DRP/BCP), penetratsion testlash va raqamli kriminalistika.",
+    "icon": "Activity",
+    "paraCount": 6
+  }
+]
+

@@ -1,0 +1,24 @@
+{
+  "code": "TD-50610401",
+  "title": "Kiberxavfsizlik",
+  "subtitle": "Raqamli ta'lim resursi (RTR)",
+  "totalHours": 60,
+  "totalParas": 30,
+  "language": "O'zbek (Lotin)",
+  "description": "Mazkur raqamli ta'lim resursi axborot va kiberxavfsizlik sohasida tahdidlarni tahlil qilish, himoyalangan tarmoqlar va ilovalar yaratish, kriptografik mexanizmlarni qo'llash hamda kiberhodisalarga tezkor va tizimli javob qaytarish bo'yicha mustahkam ko'nikmalarni shakllantirishga mo'ljallangan.",
+  "safetyNotice": "Kiberxavfsizlik kursi bo'yicha taqdim etilgan barcha materiallar faqatgina mudofaa va ta'limiy maqsadlar uchun xizmat qiladi. Amaliy laboratoriya ishlari xavfsiz simulyatsiyalar yoki alohida izolyatsiyalangan sinov muhitlarida o'tkaziladi. Kursda zararli kodlar yoki hujum vositalari berilmaydi.",
+  "outcomes": [
+    "Axborot xavfsizligining konseptual modeli (CIA triadasi: maxfiylik, yaxlitlik, mavjudlik) va xalqaro ISO/IEC 27001 standartlarini tushunish hamda qo'llash.",
+    "Tarmoq infratuzilmasi, perimetr himoyasi vositalari (Firewall, IDS/IPS, VPN, VLAN) arxitekturasini loyihalash va sozlash.",
+    "Kriptografik algoritmlar (simmetrik, asimmetrik), xesh-funksiyalar, elektron raqamli imzo (ERI) va PKI sertifikatlaridan to'g'ri foydalanish.",
+    "Veb-ilovalar va axborot tizimlaridagi xavfsizlik zaifliklarini (OWASP Top 10, SQLi, XSS) aniqlash va mudofaa mexanizmlarini kiritish.",
+    "Kiberxavfsizlik hodisalarini doimiy monitoring qilish (SIEM, SOC) hamda insidentlarga tezkor javob qaytarish (Incident Response) rejasini tuzish.",
+    "Korxonada kibergigiyena madaniyatini yuksaltirish, ijtimoiy muhandislik tahdidlarining oldini olish va me'yoriy talablarni ta'minlash."
+  ],
+  "competencies": [
+    { "name": "Himoya arxitekturasi", "level": "Yuqori daraja" },
+    { "name": "Kriptografiya va PKI", "level": "Asosiy va amaliy" },
+    { "name": "Zaifliklarni tahlil qilish", "level": "Chuqurlashtirilgan" },
+    { "name": "Insidentlarni boshqarish", "level": "Tizimli va amaliy" }
+  ]
+}

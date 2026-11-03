@@ -1,0 +1,345 @@
+[
+  {
+    "term": "Autentifikatsiya",
+    "enTerm": "Authentication",
+    "letter": "A",
+    "definition": "Foydalanuvchi, qurilma yoki tizimning o'zini da'vo qilayotgan shaxs ekanligini tasdiqlash jarayoni (masalan, login va parol, biometrika, SMS-kod orqali).",
+    "category": "Kirishni boshqarish"
+  },
+  {
+    "term": "Avtorizatsiya",
+    "enTerm": "Authorization",
+    "letter": "A",
+    "definition": "Shaxsi tasdiqlangan foydalanuvchiga tizimdagi muayyan resurslardan foydalanish yoki amallarni bajarishga ruxsat berish darajasini belgilash.",
+    "category": "Kirishni boshqarish"
+  },
+  {
+    "term": "Axborot xavfsizligi",
+    "enTerm": "Information Security",
+    "letter": "A",
+    "definition": "Axborotning har qanday ko'rinishida uning maxfiyligi, yaxlitligi va mavjudligini ta'minlashga qaratilgan kompleks chora-tadbirlar.",
+    "category": "Asoslar"
+  },
+  {
+    "term": "Asimmetrik shifrlash",
+    "enTerm": "Asymmetric Encryption",
+    "letter": "A",
+    "definition": "Ma'lumotlarni shifrlash va deshifrlash uchun ikkita bog'liq kalit — ochiq (public key) va yopiq (private key) kalitlar juftligidan foydalanadigan kriptografik usul.",
+    "category": "Kriptografiya"
+  },
+  {
+    "term": "Balandlik effekti (Ko'chki effekti)",
+    "enTerm": "Avalanche Effect",
+    "letter": "B",
+    "definition": "Kriptografik xesh-funksiyalarda kiruvchi ma'lumotning bitta biti o'zgarganda, chiquvchi xeshning kamida 50% bitlari tubdan o'zgarishi xususiyati.",
+    "category": "Kriptografiya"
+  },
+  {
+    "term": "Baiting (Qarmakka ilintirish)",
+    "enTerm": "Baiting",
+    "letter": "B",
+    "definition": "Ijtimoiy muhandislik turi; qiziquvchanlikni uyg'otuvchi zararli vositalarni (masalan, virusli fleshka) qoldirish orqali tizimga kirishga urinish.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "Brute-force hujumi",
+    "enTerm": "Brute-force Attack",
+    "letter": "B",
+    "definition": "To'g'ri parol yoki shifr kalitini topish maqsadida mumkin bo'lgan barcha variantlarni avtomatlashtirilgan tarzda ketma-ket sinab ko'rish usuli.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "CIA triadasi",
+    "enTerm": "CIA Triad",
+    "letter": "C",
+    "definition": "Axborot xavfsizligining uch asosi: Maxfiylik (Confidentiality), Yaxlitlik (Integrity) va Mavjudlik (Availability).",
+    "category": "Asoslar"
+  },
+  {
+    "term": "CVE (Common Vulnerabilities and Exposures)",
+    "enTerm": "CVE",
+    "letter": "C",
+    "definition": "Ommaga ma'lum bo'lgan axborot xavfsizligi zaifliklarining xalqaro identifikatsiya tizimi va standartlashtirilgan lug'ati.",
+    "category": "Audit va zaifliklar"
+  },
+  {
+    "term": "CVSS (Common Vulnerability Scoring System)",
+    "enTerm": "CVSS",
+    "letter": "C",
+    "definition": "Dasturiy va apparat ta'minotidagi xavfsizlik zaifliklarining jiddiylik darajasini 0 dan 10 gacha shkalada baholash standarti.",
+    "category": "Audit va zaifliklar"
+  },
+  {
+    "term": "Chuqurlashtirilgan himoya",
+    "enTerm": "Defense in Depth",
+    "letter": "Ch",
+    "definition": "Tizim mudofaasini bir necha mustaqil himoya qatlamlari (tarmoq, xost, ma'lumot, inson) asosida ko'p pog'onali tashkil etish strategiyasi.",
+    "category": "Mudofaa"
+  },
+  {
+    "term": "DDoS (Taqsimlangan xizmat ko'rsatishni rad etish)",
+    "enTerm": "Distributed Denial of Service",
+    "letter": "D",
+    "definition": "Bir vaqtning o'zida yuzlab yoki minglab kompyuterlardan (botnet) serverga ulkan miqdorda soxta so'rovlar yuborib, uning ishlashini to'xtatib qo'yish hujumi.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "DevSecOps",
+    "enTerm": "Development Security Operations",
+    "letter": "D",
+    "definition": "Dasturiy ta'minotni ishlab chiqish (Dev), xavfsizlikni ta'minlash (Sec) va amaliyotga joriy etish (Ops) jarayonlarini bir butun konveyerga birlashtirish metodologiyasi.",
+    "category": "Dasturiy xavfsizlik"
+  },
+  {
+    "term": "Digital Forensics (Raqamli kriminalistika)",
+    "enTerm": "Digital Forensics",
+    "letter": "D",
+    "definition": "Kiberjinoyatlar va axborot xavfsizligi hodisalari bo'yicha raqamli dalillarni yig'ish, tahlil qilish hamda yuridik asoslash ilmi.",
+    "category": "Hodisalar va audit"
+  },
+  {
+    "term": "Elektron raqamli imzo (ERI)",
+    "enTerm": "Digital Signature",
+    "letter": "E",
+    "definition": "Yopiq kriptografik kalit yordamida yaratilgan, elektron hujjatning muallifini tasdiqlovchi va uning yaxlitligini kafolatlovchi raqamli rekvizit.",
+    "category": "Kriptografiya"
+  },
+  {
+    "term": "EDR (Endpoint Detection and Response)",
+    "enTerm": "Endpoint Detection and Response",
+    "letter": "E",
+    "definition": "Foydalanuvchi kompyuterlari va serverlardagi shubhali faollikni real vaqtda aniqlovchi hamda hujumlarni to'xtatuvchi xavfsizlik tizimi.",
+    "category": "Mudofaa"
+  },
+  {
+    "term": "Firewall (Tarmoqlararo ekran)",
+    "enTerm": "Firewall",
+    "letter": "F",
+    "definition": "Oldindan o'rnatilgan xavfsizlik qoidalari asosida tarmoqqa kiruvchi va undan chiquvchi paketlarni filtrlovchi apparat yoki dasturiy himoya vositasi.",
+    "category": "Tarmoq xavfsizligi"
+  },
+  {
+    "term": "Fishing (Phishing)",
+    "enTerm": "Phishing",
+    "letter": "F",
+    "definition": "Foydalanuvchilarni soxta xat yoki saytlar orqali aldab, ularning login, parol va bank karta ma'lumotlarini o'g'irlashga qaratilgan ijtimoiy muhandislik hujumi.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "FIDO2 / WebAuthn",
+    "enTerm": "FIDO2",
+    "letter": "F",
+    "definition": "Parollarsiz, apparat xavfsizlik kalitlari yoki biometrika orqali veb-saytlarga xavfsiz kirish imkonini beruvchi ochiq autentifikatsiya standarti.",
+    "category": "Kirishni boshqarish"
+  },
+  {
+    "term": "Gibrid shifrlash",
+    "enTerm": "Hybrid Encryption",
+    "letter": "G",
+    "definition": "Katta hajmdagi ma'lumotlarni tezkor simmetrik shifrlash (AES) va seans kalitini uzatish uchun asimmetrik shifrlash (RSA) dan birgalikda foydalanish usuli.",
+    "category": "Kriptografiya"
+  },
+  {
+    "term": "G'arazli dastur (Malware)",
+    "enTerm": "Malicious Software",
+    "letter": "G'",
+    "definition": "Tizimga zarar yetkazish, ma'lumotlarni o'g'irlash yoki resurslarni ruxsatsiz boshqarish maqsadida maxsus yaratilgan dasturiy ta'minot.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "Hardening (Tizimni mustahkamlash)",
+    "enTerm": "System Hardening",
+    "letter": "H",
+    "definition": "Operatsion tizim va serverlardagi keraksiz xizmatlarni o'chirish, portlarni yopish va xavfsiz konfiguratsiyalarni o'rnatish orqali hujum maydonini qisqartirish.",
+    "category": "Tizim xavfsizligi"
+  },
+  {
+    "term": "Honeypot",
+    "enTerm": "Honeypot",
+    "letter": "H",
+    "definition": "Hujumchilarni chalg'itish, ularning harakatlari va hujum usullarini o'rganish maqsadida ataylab zaif ko'rinishda sozlangan yolg'on tizim.",
+    "category": "Mudofaa"
+  },
+  {
+    "term": "IDS / IPS (Bosqinchilikni aniqlash va oldini olish)",
+    "enTerm": "Intrusion Detection / Prevention System",
+    "letter": "I",
+    "definition": "Tarmoq trafigini tahlil qilib, ruxsatsiz kirish urinishlarini aniqlovchi (IDS) va ularni avtomatik tarzda to'xtatuvchi (IPS) tizimlar.",
+    "category": "Tarmoq xavfsizligi"
+  },
+  {
+    "term": "Ijtimoiy muhandislik",
+    "enTerm": "Social Engineering",
+    "letter": "I",
+    "definition": "Inson ruhiyati, ishonuvchanligi yoki qo'rquviga ta'sir o'tkazish orqali maxfiy ma'lumotlarni qo'lga kiritish yoki xavfsizlikka zid amallarni bajartirish usullari.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "Jurnal auditi (Log Audit)",
+    "enTerm": "Log Audit",
+    "letter": "J",
+    "definition": "Tizim va tarmoq qurilmalari tomonidan yozilgan voqealar tarixini xavfsizlik buzilishlari hamda anomaliyalarni topish maqsadida tahlil qilish.",
+    "category": "Hodisalar va audit"
+  },
+  {
+    "term": "Kibergigiyena",
+    "enTerm": "Cyber Hygiene",
+    "letter": "K",
+    "definition": "Foydalanuvchi va xodimlar tomonidan tizim xavfsizligini ta'minlash uchun har kuni bajarilishi lozim bo'lgan odatiy ehtiyot choralari (kuchli parol, yangilanishlar, ehtiyotkorlik).",
+    "category": "Madaniyat"
+  },
+  {
+    "term": "Kriptografiya",
+    "enTerm": "Cryptography",
+    "letter": "K",
+    "definition": "Axborotning maxfiyligi, yaxlitligi va soxtalashtirilmasligini ta'minlash uchun matematik o'zgartirishlar va shifrlash qonuniyatlarini o'rganuvchi fan.",
+    "category": "Kriptografiya"
+  },
+  {
+    "term": "Kiberxavfsizlik hodisasi (Incident)",
+    "enTerm": "Cybersecurity Incident",
+    "letter": "K",
+    "definition": "Axborot tizimining xavfsizlik siyosati buzilishiga, resurslarning ishdan chiqishiga yoki ma'lumotlar yo'qolishiga olib kelgan salbiy hodisa.",
+    "category": "Hodisalar va audit"
+  },
+  {
+    "term": "Man-in-the-Middle (MitM)",
+    "enTerm": "Man-in-the-Middle",
+    "letter": "M",
+    "definition": "Hujumchining ikki tomon o'rtasidagi aloqa kanaliga suqilib kirib, uzatilayotgan ma'lumotlarni yashirincha tinglashi yoki o'zgartirishi.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "Maxfiylik",
+    "enTerm": "Confidentiality",
+    "letter": "M",
+    "definition": "Axborot faqat ruxsat berilgan shaxslar uchun ko'rinishi va ruxsatsiz oshkor qilinmasligini kafolatlovchi xavfsizlik parametri.",
+    "category": "Asoslar"
+  },
+  {
+    "term": "MFA (Ko'p omilli autentifikatsiya)",
+    "enTerm": "Multi-Factor Authentication",
+    "letter": "M",
+    "definition": "Foydalanuvchini tasdiqlash uchun kamida ikki turdagi mustaqil dalillardan (biladigan narsa, ega bo'lgan narsa, o'ziga xos biometrika) foydalanish tizimi.",
+    "category": "Kirishni boshqarish"
+  },
+  {
+    "term": "Nol ishonch (Zero Trust)",
+    "enTerm": "Zero Trust Architecture",
+    "letter": "N",
+    "definition": "«Hech kimga ishonma, doim tekshir» tamoyiliga asoslangan xavfsizlik modeli; tarmoq ichidagi foydalanuvchilar ham begona deb qaraladi.",
+    "category": "Mudofaa"
+  },
+  {
+    "term": "Ochiq kalitlar infratuzilmasi (PKI)",
+    "enTerm": "Public Key Infrastructure",
+    "letter": "O",
+    "definition": "Raqamli sertifikatlarni yaratish, tarqatish, boshqarish va bekor qilishni ta'minlovchi apparat, dasturiy ta'minot va tashkiliy qoidalar tizimi.",
+    "category": "Kriptografiya"
+  },
+  {
+    "term": "OWASP Top 10",
+    "enTerm": "OWASP Top 10",
+    "letter": "O",
+    "definition": "Veb-ilovalar xavfsizligiga oid eng kritik va xavfli 10 ta dasturiy zaifliklarning dunyo bo'yicha nufuzli ro'yxati.",
+    "category": "Dasturiy xavfsizlik"
+  },
+  {
+    "term": "O'g'rincha kuzatish (Eavesdropping)",
+    "enTerm": "Eavesdropping",
+    "letter": "O'",
+    "definition": "Himoyalanmagan aloqa kanallarida o'tayotgan tarmoq paketlarini maxsus skanerlar (sniffer) yordamida yashirin tutib olish va o'qish.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "Penetratsion testlash (Pentest)",
+    "enTerm": "Penetration Testing",
+    "letter": "P",
+    "definition": "Tizim egasining rasmiy ruxsati bilan tizimdagi zaifliklarni topish maqsadida amalga oshiriladigan axloqiy va boshqariladigan kiberhujum simulyatsiyasi.",
+    "category": "Hodisalar va audit"
+  },
+  {
+    "term": "Ransomware (Tovlamachi dastur)",
+    "enTerm": "Ransomware",
+    "letter": "R",
+    "definition": "Jabrlanuvchining kompyuteridagi barcha fayllarni kuchli kriptografik algoritm bilan shifrlab qo'yib, ochish evaziga to'lov talab qiluvchi zararli dastur.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "Rootkit",
+    "enTerm": "Rootkit",
+    "letter": "R",
+    "definition": "Operatsion tizimning chuqur qatlamlariga joylashib, tizim ustidan to'liq nazoratni qo'lga oluvchi va o'z mavjudligini antiviruslardan yashiruvchi zararli vosita.",
+    "category": "Tahdidlar"
+  },
+  {
+    "term": "SIEM",
+    "enTerm": "Security Information and Event Management",
+    "letter": "S",
+    "definition": "Barcha tarmoq va dasturiy vositalardan jurnallarni (loglarni) to'plab, ularni tahlil qiluvchi va real vaqtda tahdidlarni aniqlovchi markaziy tizim.",
+    "category": "Hodisalar va audit"
+  },
+  {
+    "term": "SOC (Xavfsizlik operatsiyalari markazi)",
+    "enTerm": "Security Operations Center",
+    "letter": "S",
+    "definition": "Tashkilot xavfsizlik holatini 24/7 rejimida kuzatuvchi, kiberhujumlarni qaytaruvchi va insidentlarga javob beruvchi mutaxassislar guruhi va markazi.",
+    "category": "Hodisalar va audit"
+  },
+  {
+    "term": "SQL-in'eksiya (SQLi)",
+    "enTerm": "SQL Injection",
+    "letter": "S",
+    "definition": "Foydalanuvchi kiritadigan maydonlar orqali ma'lumotlar bazasiga g'arazli SQL so'rovlarini uzatib, maxfiy ma'lumotlarni o'g'irlash yoki o'zgartirish usuli.",
+    "category": "Dasturiy xavfsizlik"
+  },
+  {
+    "term": "Shifrlash (Encryption)",
+    "enTerm": "Encryption",
+    "letter": "Sh",
+    "definition": "Oddiy tushunarli matnni faqat maxfiy kalit egalarigina o'qiy oladigan tushunarsiz shifrli matnga (ciphertext) aylantirish jarayoni.",
+    "category": "Kriptografiya"
+  },
+  {
+    "term": "TLS / SSL",
+    "enTerm": "Transport Layer Security",
+    "letter": "T",
+    "definition": "Internet tarmog'ida mijoz (brauzer) va server o'rtasida ma'lumotlarni shifrlangan va yaxlit ko'rinishda xavfsiz uzatishni ta'minlovchi kriptografik protokol.",
+    "category": "Tarmoq xavfsizligi"
+  },
+  {
+    "term": "VPN (Virtual xususiy tarmoq)",
+    "enTerm": "Virtual Private Network",
+    "letter": "V",
+    "definition": "Ommaviy internet orqali ikkita nuqta o'rtasida shifrlangan xavfsiz virtual tunnel barpo etuvchi texnologiya.",
+    "category": "Tarmoq xavfsizligi"
+  },
+  {
+    "term": "Xesh-funksiya",
+    "enTerm": "Hash Function",
+    "letter": "X",
+    "definition": "Har qanday o'lchamdagi kiruvchi ma'lumotni qat'iy belgilangan uzunlikdagi noyob raqamli izga (xesh) aylantiruvchi bir tomonlama matematik funksiya.",
+    "category": "Kriptografiya"
+  },
+  {
+    "term": "XSS (Cross-Site Scripting)",
+    "enTerm": "Cross-Site Scripting",
+    "letter": "X",
+    "definition": "Veb-sahifaga g'arazli JavaScript kodlarini kiritish orqali boshqa foydalanuvchilarning seans identifikatorlarini (cookie) o'g'irlash hujumi.",
+    "category": "Dasturiy xavfsizlik"
+  },
+  {
+    "term": "Yaxlitlik",
+    "enTerm": "Integrity",
+    "letter": "Y",
+    "definition": "Ma'lumotlar va dasturlarning faqat vakolatli tarzda, to'g'ri va o'zgarishsiz saqlanishi holati.",
+    "category": "Asoslar"
+  },
+  {
+    "term": "Zero-Day (Nolinchi kun zaifligi)",
+    "enTerm": "Zero-Day Vulnerability",
+    "letter": "Z",
+    "definition": "Dastur ishlab chiquvchisiga hali ma'lum bo'lmagan va unga qarshi hali tuzatuvchi dastur (patch) chiqarilmagan yangi xavfsizlik tuynugi.",
+    "category": "Tahdidlar"
+  }
+]
