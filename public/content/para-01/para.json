@@ -25,7 +25,8 @@
         }
     ],
     "video": {
-        "file": "media/para-01.mp4",
+        "file": "video1.mp4",
+        "src": "./content/para-01/video1.mp4",
         "durationMin": 6,
         "resolution": "1280x720",
         "poster": "media/para-01.jpg"

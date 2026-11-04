@@ -28,9 +28,44 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ video, paraNumber }) =
   const [speed, setSpeed] = useState(1);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [videoError, setVideoError] = useState(false);
+  const [srcIndex, setSrcIndex] = useState(0);
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+  const paraFolder = `para-${String(paraNumber).padStart(2, '0')}`;
+
+  // Candidate video URLs to try in order
+  const candidateSrcs = React.useMemo(() => {
+    const list: string[] = [];
+    if (video.src) list.push(video.src);
+    if (video.file) list.push(`./content/${paraFolder}/${video.file}`);
+    list.push(`./content/${paraFolder}/video1.mp4`);
+    list.push(`./content/${paraFolder}/video.mp4`);
+    list.push(`./content/${paraFolder}/media/para-01.mp4`);
+    // Absolute paths as well for certain browser / router contexts
+    if (video.src) list.push(video.src.replace(/^\.\//, '/'));
+    list.push(`/content/${paraFolder}/video1.mp4`);
+    list.push(`/content/${paraFolder}/video.mp4`);
+    return Array.from(new Set(list));
+  }, [video, paraFolder]);
+
+  const currentSrc = candidateSrcs[srcIndex] || candidateSrcs[0];
+
+  // Reset when video or para changes
+  useEffect(() => {
+    setSrcIndex(0);
+    setVideoError(false);
+    setIsPlaying(false);
+  }, [video, paraNumber]);
+
+  const handleVideoError = () => {
+    if (srcIndex < candidateSrcs.length - 1) {
+      setSrcIndex((prev) => prev + 1);
+    } else {
+      setVideoError(true);
+    }
+  };
 
   const storageKey = `kiberxavfsizlik_video_pos_para_${paraNumber}`;
 
@@ -169,9 +204,16 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ video, paraNumber }) =
         <div className="relative aspect-video w-full flex items-center justify-center bg-slate-950">
           <video
             ref={videoRef}
-            src={video.src || `./content/para-01/${video.file}`}
-            className={`h-full w-full object-cover ${videoError ? 'hidden' : 'block'}`}
-            onError={() => setVideoError(true)}
+            src={currentSrc}
+            preload="metadata"
+            playsInline
+            className={`h-full w-full object-contain ${videoError ? 'hidden' : 'block'}`}
+            onError={handleVideoError}
+            onLoadedData={() => setVideoError(false)}
+            onLoadedMetadata={() => {
+              setVideoError(false);
+              if (videoRef.current) setDuration(videoRef.current.duration);
+            }}
             onTimeUpdate={() => {
               if (videoRef.current) {
                 const cur = videoRef.current.currentTime;
@@ -180,9 +222,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({ video, paraNumber }) =
                   localStorage.setItem(storageKey, String(cur));
                 } catch {}
               }
-            }}
-            onLoadedMetadata={() => {
-              if (videoRef.current) setDuration(videoRef.current.duration);
             }}
             onEnded={() => setIsPlaying(false)}
           />
