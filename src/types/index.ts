@@ -42,6 +42,7 @@ export interface ModuleInfo {
   safetyNotice: string;
   outcomes: string[];
   competencies: { name: string; level: string }[];
+  authors?: AuthorItem[];
 }
 
 export interface ParaSummary {
@@ -134,4 +135,22 @@ export interface UserProgress {
   quizScores: Record<number, number>; // paraNumber: percent
   lastVisitedPara: number;
   lastVisitedTab: TabId;
+}
+
+export interface AuthorItem {
+  id: string;
+  name: string;
+  fullName: string;
+  role: string;
+  degree: string;
+  institution: string;
+  workplace?: string;
+  specialty: string;
+  phone: string;
+  formattedPhone: string;
+  photo3x4?: string;
+  photoGrad?: string;
+  avatarFallback?: string;
+  responsibilities: string[];
+  badges: string[];
 }

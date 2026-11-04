@@ -11,6 +11,7 @@ import { ParaPage } from './pages/ParaPage';
 import { GlossaryPage } from './pages/GlossaryPage';
 import { ResultsPage } from './pages/ResultsPage';
 import { CoveragePage } from './pages/CoveragePage';
+import { AuthorsPage } from './pages/AuthorsPage';
 import { ParaSummary, GlossaryItem, UserProgress } from './types';
 import { getParasIndex, getGlobalGlossary } from './services/contentService';
 import { getProgress } from './services/progressService';
@@ -96,6 +97,7 @@ const AppContent: React.FC = () => {
             <Route path="/glossary" element={<GlossaryPage />} />
             <Route path="/results" element={<ResultsPage />} />
             <Route path="/coverage" element={<CoveragePage />} />
+            <Route path="/authors" element={<AuthorsPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>

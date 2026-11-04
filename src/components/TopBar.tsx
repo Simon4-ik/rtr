@@ -89,7 +89,11 @@ export const TopBar: React.FC<TopBarProps> = ({
             <Link
               to="/"
               className={`rounded-btn px-3 py-1.5 transition-colors ${
-                isActive('/') && !location.pathname.startsWith('/results') && !location.pathname.startsWith('/coverage')
+                isActive('/') &&
+                !location.pathname.startsWith('/results') &&
+                !location.pathname.startsWith('/coverage') &&
+                !location.pathname.startsWith('/authors') &&
+                !location.pathname.startsWith('/glossary')
                   ? 'bg-accent-soft text-accent'
                   : 'text-muted hover:text-text hover:bg-surface-2'
               }`}
@@ -128,6 +132,17 @@ export const TopBar: React.FC<TopBarProps> = ({
               }`}
             >
               Qamrov (Jury)
+            </Link>
+
+            <Link
+              to="/authors"
+              className={`rounded-btn px-3 py-1.5 transition-colors ${
+                isActive('/authors')
+                  ? 'bg-accent-soft text-accent'
+                  : 'text-muted hover:text-text hover:bg-surface-2'
+              }`}
+            >
+              Mu'alliflar
             </Link>
           </nav>
 

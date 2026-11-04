@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0e9f94" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0b1120" />
+    </linearGradient>
+    <linearGradient id="tieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e9f94" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0bb95" />
+      <stop offset="100%" stop-color="#cda077" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background 3x4 -->
+  <rect width="300" height="400" fill="url(#bgGrad)" />
+  <circle cx="150" cy="140" r="110" fill="url(#accentGlow)" />
+
+  <!-- Academic / Portrait Silhouette -->
+  <!-- Shoulders / Suit -->
+  <path d="M 20 400 L 50 320 L 95 270 L 120 280 L 150 330 L 180 280 L 205 270 L 250 320 L 280 400 Z" fill="url(#suitGrad)" />
+  <!-- Lapel Left -->
+  <polygon points="50,320 120,280 135,335 90,380" fill="#293548" />
+  <!-- Lapel Right -->
+  <polygon points="250,320 180,280 165,335 210,380" fill="#293548" />
+
+  <!-- White Shirt Collar -->
+  <polygon points="120,270 150,310 135,270" fill="#f8fafc" />
+  <polygon points="180,270 150,310 165,270" fill="#f8fafc" />
+  <polygon points="135,270 150,310 165,270" fill="#ffffff" />
+
+  <!-- Neck -->
+  <path d="M 128 230 L 128 275 Q 150 285 172 275 L 172 230 Z" fill="url(#skinGrad)" />
+
+  <!-- Tie -->
+  <polygon points="144,285 156,285 160,335 150,350 140,335" fill="url(#tieGrad)" />
+  <!-- Tie Knot -->
+  <polygon points="144,285 156,285 154,295 146,295" fill="#0d9488" />
+
+  <!-- Head / Face -->
+  <ellipse cx="150" cy="175" rx="55" ry="68" fill="url(#skinGrad)" />
+
+  <!-- Ears -->
+  <ellipse cx="92" cy="178" rx="8" ry="16" fill="#cda077" />
+  <ellipse cx="208" cy="178" rx="8" ry="16" fill="#cda077" />
+
+  <!-- Hair -->
+  <path d="M 94 165 C 92 120, 110 95, 150 95 C 190 95, 208 120, 206 165 C 200 130, 185 110, 150 110 C 120 110, 105 130, 94 165 Z" fill="#1f2937" />
+
+  <!-- Academic Glasses -->
+  <rect x="110" y="160" width="30" height="20" rx="6" fill="none" stroke="#22d3c5" stroke-width="2.5" />
+  <rect x="160" y="160" width="30" height="20" rx="6" fill="none" stroke="#22d3c5" stroke-width="2.5" />
+  <line x1="140" y1="168" x2="160" y2="168" stroke="#22d3c5" stroke-width="2.5" />
+  <line x1="95" y1="165" x2="110" y2="168" stroke="#22d3c5" stroke-width="2" />
+  <line x1="190" y1="168" x2="205" y2="165" stroke="#22d3c5" stroke-width="2" />
+
+  <!-- Subtle Eyes -->
+  <ellipse cx="125" cy="170" rx="3.5" ry="2.5" fill="#1f2937" />
+  <ellipse cx="175" cy="170" rx="3.5" ry="2.5" fill="#1f2937" />
+
+  <!-- Eyebrows -->
+  <path d="M 112 153 Q 125 149 138 153" fill="none" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 162 153 Q 175 149 188 153" fill="none" stroke="#1f2937" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Nose -->
+  <path d="M 148 175 L 146 195 L 154 195" fill="none" stroke="#a07a52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Gentle Smile -->
+  <path d="M 135 214 Q 150 224 165 214" fill="none" stroke="#8b5e34" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Badge / Initials at bottom corner -->
+  <g transform="translate(20, 20)">
+    <rect width="48" height="24" rx="6" fill="#0e9f94" fill-opacity="0.25" stroke="#22d3c5" stroke-width="1" />
+    <text x="24" y="16" fill="#22d3c5" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">3x4</text>
+  </g>
+
+  <g transform="translate(230, 20)">
+    <circle cx="14" cy="12" r="14" fill="#4f46e5" fill-opacity="0.3" stroke="#818cf8" stroke-width="1" />
+    <text x="14" y="17" fill="#c7d2fe" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">SE</text>
+  </g>
+</svg>

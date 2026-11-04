@@ -39,6 +39,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
         { type: 'page', title: 'O\'zlashtirish va Natijalar (Progress)', path: '/results' },
         { type: 'page', title: 'Qamrov matritsasi (Coverage for Jury)', path: '/coverage' },
         { type: 'page', title: 'Global A–Z Glossariy', path: '/glossary' },
+        { type: 'page', title: "Mu'alliflar (Nozimjonov M., Sobirov E.)", path: '/authors' },
         ...paras.slice(0, 5).map((p) => ({
           type: 'para',
           title: `${p.number}-para. ${p.title}`,
@@ -46,6 +47,24 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
           badge: p.section,
         })),
       ];
+    }
+
+    const matchedPages = [];
+    if (
+      'mualliflar'.includes(q) ||
+      "mu'alliflar".includes(q) ||
+      'nozimjonov'.includes(q) ||
+      'muhammadabdulloh'.includes(q) ||
+      'sobirov'.includes(q) ||
+      'esonboy'.includes(q) ||
+      'authors'.includes(q)
+    ) {
+      matchedPages.push({
+        type: 'page',
+        title: "Mu'alliflar: Nozimjonov M., Sobirov E.",
+        path: '/authors',
+        badge: 'RTR Mualliflari',
+      });
     }
 
     const matchedParas = paras
@@ -68,7 +87,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
         badge: g.enTerm || 'Atama',
       }));
 
-    return [...matchedParas, ...matchedGlossary];
+    return [...matchedPages, ...matchedParas, ...matchedGlossary];
   }, [query, paras, glossary]);
 
   // Keyboard navigation

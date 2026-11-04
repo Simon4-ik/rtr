@@ -20,6 +20,31 @@
     { "name": "Kriptografiya va PKI", "level": "Asosiy va amaliy" },
     { "name": "Zaifliklarni tahlil qilish", "level": "Chuqurlashtirilgan" },
     { "name": "Insidentlarni boshqarish", "level": "Tizimli va amaliy" }
+  ],
+  "authors": [
+    {
+      "id": "nozimjonov",
+      "name": "Nozimjonov Muhammadabdulloh Murodjon o'g'li",
+      "role": "Muallif & Dasturiy ta'minot muhandisi",
+      "degree": "Oliy",
+      "institution": "Andijon Davlat Universiteti",
+      "specialty": "Kompyuter injiniringi (Computer Engineering)",
+      "phone": "+998938891505",
+      "formattedPhone": "+998 93 889 15 05",
+      "photo3x4": "authors/nozimjonov_3x4.jpg"
+    },
+    {
+      "id": "sobirov",
+      "name": "Sobirov Esonboy Gulmurodjon o’g’li",
+      "role": "Muallif & Pedagogik metodist",
+      "degree": "Oliy",
+      "institution": "Andijon Davlat universiteti",
+      "workplace": "Andijon pedagogika texnikumi",
+      "specialty": "Informatika o’qitish metodikasi",
+      "phone": "+998991014640",
+      "formattedPhone": "+998 99 101 46 40",
+      "photo3x4": "authors/esonboy_default.svg"
+    }
   ]
 }
 

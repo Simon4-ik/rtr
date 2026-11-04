@@ -28,6 +28,7 @@ export const Footer: React.FC = () => {
                 <li><Link to="/" className="hover:text-accent transition-colors">Mundarija (30 para)</Link></li>
                 <li><Link to="/para/para-01" className="hover:text-accent transition-colors">1-para namunasi</Link></li>
                 <li><Link to="/glossary" className="hover:text-accent transition-colors">A–Z Glossariy</Link></li>
+                <li><Link to="/authors" className="hover:text-accent transition-colors text-text font-medium">Mu'alliflar guruhi</Link></li>
               </ul>
             </div>
 

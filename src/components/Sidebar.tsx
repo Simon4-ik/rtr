@@ -14,7 +14,8 @@ import {
   Wifi,
   Server,
   Cloud,
-  FileCheck2
+  FileCheck2,
+  Users
 } from 'lucide-react';
 import { ParaSummary, UserProgress } from '../types';
 
@@ -190,6 +191,24 @@ export const Sidebar: React.FC<SidebarProps> = ({
           );
         })}
       </div>
+
+      {/* Sidebar Footer Link */}
+      {!isCollapsed && (
+        <div className="border-t border-border p-3 shrink-0 bg-surface-2/40">
+          <Link
+            to="/authors"
+            onClick={onItemClick}
+            className={`flex items-center gap-2 rounded-lg px-2.5 py-2 text-xs transition-colors ${
+              location.pathname === '/authors'
+                ? 'bg-accent/15 text-accent font-semibold border-l-2 border-accent'
+                : 'text-muted hover:bg-surface hover:text-text'
+            }`}
+          >
+            <Users className="h-4 w-4 text-accent shrink-0" />
+            <span className="font-semibold truncate">Mu'alliflar (RTR guruhi)</span>
+          </Link>
+        </div>
+      )}
     </aside>
   );
 };
