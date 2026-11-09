@@ -5,17 +5,47 @@
   "resolution": "720p HD",
   "description": "Mazkur video ma'ruzada kiberxavfsizlik fani predmeti, axborot aktivlarini tasniflash hamda chuqurlashtirilgan himoya tizimining amaliy sxemalari tushuntirib beriladi.",
   "timestamps": [
-    { "time": "00:00", "title": "Kirish va mavzuning dolzarbligi" },
-    { "time": "02:40", "title": "Axborot xavfsizligi vs. Kiberxavfsizlik" },
-    { "time": "06:15", "title": "CIA triadasi: Maxfiylik, Yaxlitlik, Mavjudlik" },
-    { "time": "09:50", "title": "Inson omili va kibergigiyena tamoyillari" },
-    { "time": "12:10", "title": "Chuqurlashtirilgan himoya (Defense in Depth) xulosasi" }
+    {
+      "time": "00:00",
+      "title": "Kirish va mavzuning dolzarbligi"
+    },
+    {
+      "time": "02:40",
+      "title": "Axborot xavfsizligi vs. Kiberxavfsizlik"
+    },
+    {
+      "time": "06:15",
+      "title": "CIA triadasi: Maxfiylik, Yaxlitlik, Mavjudlik"
+    },
+    {
+      "time": "09:50",
+      "title": "Inson omili va kibergigiyena tamoyillari"
+    },
+    {
+      "time": "12:10",
+      "title": "Chuqurlashtirilgan himoya (Defense in Depth) xulosasi"
+    }
   ],
   "transcripts": [
-    { "time": "00:15", "speaker": "O'qituvchi", "text": "Assalomu alaykum, aziz talabalar! Kiberxavfsizlik fani bo'yicha 1-paraga xush kelibsiz. Bugungi mashg'ulotimizda axborot xavfsizligining poydevori hisoblangan tushunchalar bilan tanishamiz." },
-    { "time": "03:10", "speaker": "O'qituvchi", "text": "Ko'pincha odamlar axborot xavfsizligi va kiberxavfsizlik tushunchalarini almashtirib qo'yishadi. Axborot xavfsizligi barcha shakldagi ma'lumotlarni qamrasa, kiberxavfsizlik bevosita raqamli muhitdagi tarmoqlar, serverlar va dasturlarni himoyalashga ixtisoslashgan." },
-    { "time": "06:30", "speaker": "O'qituvchi", "text": "Har qanday xavfsizlik arxitekturasining markazida CIA modeli turadi: Confidentiality — Maxfiylik, Integrity — Yaxlitlik, va Availability — Mavjudlik." },
-    { "time": "12:30", "speaker": "O'qituvchi", "text": "Xulosa o'rnida aytish mumkinki, eng mustahkam tizim ham uning foydalanuvchisi xato qilsa zaif bo'lib qoladi. Shu sababli texnik himoyani xabardorlik bilan uyg'unlashtirish shart." }
+    {
+      "time": "00:15",
+      "speaker": "O'qituvchi",
+      "text": "Assalomu alaykum, aziz talabalar! Kiberxavfsizlik fani bo'yicha 1-mavzuga xush kelibsiz. Bugungi mashg'ulotimizda axborot xavfsizligining poydevori hisoblangan tushunchalar bilan tanishamiz."
+    },
+    {
+      "time": "03:10",
+      "speaker": "O'qituvchi",
+      "text": "Ko'pincha odamlar axborot xavfsizligi va kiberxavfsizlik tushunchalarini almashtirib qo'yishadi. Axborot xavfsizligi barcha shakldagi ma'lumotlarni qamrasa, kiberxavfsizlik bevosita raqamli muhitdagi tarmoqlar, serverlar va dasturlarni himoyalashga ixtisoslashgan."
+    },
+    {
+      "time": "06:30",
+      "speaker": "O'qituvchi",
+      "text": "Har qanday xavfsizlik arxitekturasining markazida CIA modeli turadi: Confidentiality — Maxfiylik, Integrity — Yaxlitlik, va Availability — Mavjudlik."
+    },
+    {
+      "time": "12:30",
+      "speaker": "O'qituvchi",
+      "text": "Xulosa o'rnida aytish mumkinki, eng mustahkam tizim ham uning foydalanuvchisi xato qilsa zaif bo'lib qoladi. Shu sababli texnik himoyani xabardorlik bilan uyg'unlashtirish shart."
+    }
   ]
 }
-

@@ -45,4 +45,3 @@ O'quvchi xotirasida oson saqlanishi uchun:
 * **M** — Maxfiylik (faqat egalariga);
 * **Y** — Yaxlitlik (bir bayt ham soxtalashtirilmasin);
 * **M** — Mavjudlik (kerak vaqtda qo'l yetishi shart).
-

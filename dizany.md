@@ -42,20 +42,19 @@ PAGES
 1. HOME (hero)
    - Left: big headline "Kiberxavfsizlikni amalda o'rganing", short subtitle,
      two buttons: "O'qishni boshlash" (primary), "Mundarija" (ghost).
-     Stats row: 30 para, 60 soat, 4 natija, 30 video.
+     Stats row: 30 ta mavzu, 60 soat, 4 natija, 30 video.
    - Right: animated hero illustration drawn in SVG/canvas: a softly glowing shield
      in the middle, with a slowly drifting network of nodes and lines around it;
      nodes pulse gently; moving the mouse shifts the layers slightly (parallax, max
      12px). Pause when the tab is hidden. Static fallback for reduced motion.
    - Below: "O'qitish natijalari" ON1-ON4 as four cards with icons and a count of
-     paras mapped to each. Then "Mundarija" grid of 30 para cards
+     paras mapped to each. Then "Mundarija" grid of 30 ta mavzu kartalari
      (number, title, outcome chips, estimated 2h, status). Section filters as chips.
    - A "Metodlar" strip showing the 4 official teaching methods with icons.
-2. PARA PAGE
+2. MAVZU SAHIFASI
    - Header: breadcrumb, para number, title, outcome chips (ON1...), method chips,
      progress ring showing completed tabs (of 9).
-   - Tabs with an animated sliding underline (layoutId): Maqsad, Ma'ruza, Metodlar,
-     Video, Taqdimot, Didaktik, Amaliyot, Nazorat, Glossariy. Keyboard accessible
+   - Tabs with an animated sliding underline (layoutId): Mavzular ro'yxati, Ma'ruza matni, O'qitish metodlari, Media materiallar, Ko'rgazmali materiallar, Taqdimot materiallari, Amaliy mashg'ulotlar, Baholash-savollari, Glossariy. Keyboard accessible
      (arrow keys), URL remembers the tab (#/para/5/video). On mobile tabs scroll
      horizontally with snap.
    - Sticky bottom bar: "Oldingi para" / "Keyingi para".

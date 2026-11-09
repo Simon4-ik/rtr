@@ -91,7 +91,7 @@ export async function getParaData(paraNumber: number): Promise<{ official: ParaD
   const summary = allParas.find((p) => p.number === paraNumber) || {
     id: `para-${String(paraNumber).padStart(2, '0')}`,
     number: paraNumber,
-    title: `${paraNumber}-para mavzusi`,
+    title: `${paraNumber}-mavzu`,
     hours: 2,
     section: 'Xavfsizlik',
     outcomes: ['ON2'],
@@ -263,7 +263,7 @@ function createPlaceholderOfficial(summary: ParaSummary): ParaDataOfficial {
 
 function createPlaceholderLecture(summary: ParaSummary): string {
   const num = summary.number;
-  return `# ${num}-para. ${summary.title}
+  return `# ${num}-mavzu. ${summary.title}
 
 **Reja:**
 1. ${summary.title} bo'yicha tayanch tushunchalar va fanning maqsadi
@@ -274,7 +274,7 @@ function createPlaceholderLecture(summary: ParaSummary): string {
 
 ## 1. Tayanch tushunchalar va fanning maqsadi
 
-Axborotlashgan jamiyatda tizimlarning xavfsiz va uzluksiz ishlashini ta'minlash ustuvor vazifa sanaladi. Mazkur ${num}-parada ko'rilayotgan «${summary.title}» yo'nalishi zamonaviy kiberxavfsizlik arxitekturasining ajralmas qismidir. Axborot aktivlarini to'g'ri tasniflash, unga nisbatan xavflarni baholash va himoya perimetrini shakllantirish mutaxassisdan tizimli yondashuvni talab qiladi.
+Axborotlashgan jamiyatda tizimlarning xavfsiz va uzluksiz ishlashini ta'minlash ustuvor vazifa sanaladi. Mazkur ${num}-mavzuda ko'rilayotgan «${summary.title}» yo'nalishi zamonaviy kiberxavfsizlik arxitekturasining ajralmas qismidir. Axborot aktivlarini to'g'ri tasniflash, unga nisbatan xavflarni baholash va himoya perimetrini shakllantirish mutaxassisdan tizimli yondashuvni talab qiladi.
 
 Axborot xavfsizligining muvozanatli himoya modeli har doim uchta ustunga tayanadi: axborotning faqat vakolatli shaxslarga ko'rinishi (maxfiylik), uning ruxsatsiz o'zgartirilmasligi (yaxlitlik) hamda kerakli vaqtda uzluksiz taqdim etilishi (mavjudlik). Ushbu mavzu bevosita mazkur ustunlarni ta'minlash mexanizmlarini yoritadi.
 

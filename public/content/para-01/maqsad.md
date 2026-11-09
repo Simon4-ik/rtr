@@ -24,4 +24,3 @@ Mazkur parani muvaffaqiyatli o'zlashtirgach, talaba:
 ### 3. Malaka (Competencies)
 * Tashkilot axborot tizimlarida birlamchi xavf-xatarlarni aniqlash va mudofaa choralarini rejalashtirish;
 * Xavfsizlik hodisalarini hujjatlashtirish va bartaraf etish guruhiga tezkor hisobot tayyorlash madaniyati.
-

@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
               O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi standartlari asosida ishlab chiqilgan elektron darslik majmuasi.
             </p>
             <p className="font-mono text-[11px] text-muted">
-              Modul kodi: <strong className="text-text">TD-50610401</strong> • 60 soat • 30 para
+              Modul kodi: <strong className="text-text">TD-50610401</strong> • 60 soat • 30 ta mavzu
             </p>
           </div>
 
@@ -25,10 +25,10 @@ export const Footer: React.FC = () => {
             <div className="space-y-1.5">
               <p className="font-bold text-text uppercase tracking-wider text-[11px]">Resurslar</p>
               <ul className="space-y-1">
-                <li><Link to="/" className="hover:text-accent transition-colors">Mundarija (30 para)</Link></li>
-                <li><Link to="/para/para-01" className="hover:text-accent transition-colors">1-para namunasi</Link></li>
+                <li><Link to="/" className="hover:text-accent transition-colors">Mundarija (30 ta mavzu)</Link></li>
+                <li><Link to="/para/para-01" className="hover:text-accent transition-colors">1-mavzu namunasi</Link></li>
                 <li><Link to="/glossary" className="hover:text-accent transition-colors">A–Z Glossariy</Link></li>
-                <li><Link to="/authors" className="hover:text-accent transition-colors text-text font-medium">Mu'alliflar guruhi</Link></li>
+                <li><Link to="/authors" className="hover:text-accent transition-colors text-text font-medium">Mualliflar guruhi</Link></li>
               </ul>
             </div>
 

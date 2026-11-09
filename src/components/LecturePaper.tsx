@@ -154,7 +154,7 @@ export const LecturePaper: React.FC<LecturePaperProps> = ({ content, paraNumber,
                 <span>•</span>
                 <span>60 soatlik RTR</span>
                 <span>•</span>
-                <span>{paraNumber}-para</span>
+                <span>{paraNumber}-mavzu</span>
               </div>
             </header>
 

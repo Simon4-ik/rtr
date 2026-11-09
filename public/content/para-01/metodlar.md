@@ -27,4 +27,3 @@ Ushbu mashg'ulotda nazariy bilimlarni mustahkamlash va amaliy tahlil ko'nikmalar
 
 ### 4. Interaktiv baholash va refleksiyalar
 * **Nazorat viktorinasi:** Mashg'ulot yakunida har bir talaba 5 ta test savolidan iborat elektron nazoratdan o'tadi va o'zlashtirish darajasi bo'yicha tezkor qayta aloqa (instant feedback) oladi.
-

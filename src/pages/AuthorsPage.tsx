@@ -70,7 +70,7 @@ export const AuthorsPage: React.FC = () => {
       skills: ["Kompyuter injiniringi", "Web & Software Architecture", "Kiberxavfsizlik tizimlari", "UI/UX & Accessibility"],
       contributions: [
         "Platformaning to'liq arxitekturasi va responsive foydalanuvchi interfeysini (React + Vite + Tailwind) loyihalash",
-        "30 ta paraning interaktiv didaktik resurslari, xavfsiz laboratoriya simulyatorlari va nazorat test modulini yaratish",
+        "30 ta mavzuning interaktiv didaktik resurslari, xavfsiz laboratoriya simulyatorlari va nazorat test modulini yaratish",
         "Oflayn (file://) va onlayn (Netlify) muhitda 100% mustaqil ishlovchi statik ma'lumotlar bazasini optimallashtirish",
         "WCAG AA xalqaro standartiga mos yuqori kontrastli qorong'i/yorug' mavzular va klaviatura navigatsiyasini joriy etish"
       ]
@@ -126,7 +126,7 @@ export const AuthorsPage: React.FC = () => {
           </h1>
 
           <p className="text-xs sm:text-sm text-muted max-w-3xl leading-relaxed">
-            O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi tasdiqlagan <strong>TD-50610401</strong> modul kodi bo'yicha 60 soatlik (30 para) "Kiberxavfsizlik" elektron darslik majmuasi va interaktiv ta'limiy platformasining yaratuvchi mualliflari to'g'risida to'liq rasmiy ma'lumotlar.
+            O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi tasdiqlagan <strong>TD-50610401</strong> modul kodi bo'yicha 60 soatlik (30 ta mavzu) "Kiberxavfsizlik" elektron darslik majmuasi va interaktiv ta'limiy platformasining yaratuvchi mualliflari to'g'risida to'liq rasmiy ma'lumotlar.
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2 text-xs font-semibold">

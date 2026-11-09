@@ -1,4 +1,4 @@
-# 1-para. Kiberxavfsizlik fanining maqsadi, vazifalari va rivojlanish yoʻnalishlari
+# 1-mavzu. Kiberxavfsizlik fanining maqsadi, vazifalari va rivojlanish yoʻnalishlari
 
 **Reja:**
 1. Kiberxavfsizlik tushunchasi va fanning maqsadi

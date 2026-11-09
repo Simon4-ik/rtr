@@ -1,4 +1,4 @@
-# 1-para. Kiberxavfsizlik fanining maqsadi, vazifalari va rivojlanish yoʻnalishlari
+# 1-mavzu. Kiberxavfsizlik fanining maqsadi, vazifalari va rivojlanish yoʻnalishlari
 
 **Reja:**
 1. Kiberxavfsizlik tushunchasi va fanning maqsadi
@@ -53,4 +53,3 @@ Zamonaviy tendensiyalar orasida bulutli xizmatlarga oʻtish, mobil qurilmalar so
 Shuning uchun zamonaviy mudofaa tizimi bitta texnik vositaga tayanmaydi. U texnik choralar, tashkiliy qoidalar va xodimlarning xabardorligini birlashtiradi. Bu tizimli yondashuv «chuqurlashtirilgan himoya» (Defense in Depth) deb ataladi.
 
 **Xulosa.** Kiberxavfsizlik raqamli muhitda axborotning maxfiyligi, yaxlitligi va mavjudligini taʼminlaydi. Uni oʻrganish orqali mutaxassis tahdidlarni chuqur tahlil qiladi, mos himoya usullarini tanlaydi va barqaror, himoyalangan tizimlarni barpo etadi.
-

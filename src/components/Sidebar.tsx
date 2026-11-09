@@ -205,7 +205,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             }`}
           >
             <Users className="h-4 w-4 text-accent shrink-0" />
-            <span className="font-semibold truncate">Mu'alliflar (RTR guruhi)</span>
+            <span className="font-semibold truncate">Mualliflar (RTR guruhi)</span>
           </Link>
         </div>
       )}

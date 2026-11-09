@@ -77,7 +77,7 @@ export const LectureView: React.FC<LectureViewProps> = ({ content, paraNumber, t
               <span>•</span>
               <span>60 soatlik RTR</span>
               <span>•</span>
-              <span>{paraNumber}-para ma'ruzasi</span>
+              <span>{paraNumber}-mavzu ma'ruzasi</span>
             </div>
           </header>
 

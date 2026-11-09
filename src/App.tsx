@@ -44,7 +44,7 @@ const AppContent: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  const isParaRoute = location.pathname.startsWith('/para');
+  const isParaRoute = location.pathname.startsWith('/para') || location.pathname.startsWith('/mavzu');
 
   return (
     <div className="flex min-h-screen flex-col bg-bg text-text antialiased transition-colors duration-200">
@@ -56,7 +56,7 @@ const AppContent: React.FC = () => {
 
       {/* Main App Container with Optional Left Sidebar */}
       <div className="flex-1 flex w-full">
-        {/* Desktop Sidebar (visible on Para pages or can be toggled) */}
+        {/* Desktop Sidebar (visible on Para/Mavzu pages or can be toggled) */}
         {isParaRoute && (
           <Sidebar
             paras={paras}
@@ -94,6 +94,8 @@ const AppContent: React.FC = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/para/:paraId" element={<ParaPage />} />
             <Route path="/para/:paraId/:tabId" element={<ParaPage />} />
+            <Route path="/mavzu/:paraId" element={<ParaPage />} />
+            <Route path="/mavzu/:paraId/:tabId" element={<ParaPage />} />
             <Route path="/glossary" element={<GlossaryPage />} />
             <Route path="/results" element={<ResultsPage />} />
             <Route path="/coverage" element={<CoveragePage />} />

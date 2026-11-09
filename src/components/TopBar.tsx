@@ -78,7 +78,7 @@ export const TopBar: React.FC<TopBarProps> = ({
                   </span>
                 </div>
                 <p className="text-[10px] text-muted -mt-0.5 hidden sm:block">
-                  RTR • 60 soat • 30 para
+                  RTR • 60 soat • 30 ta mavzu
                 </p>
               </div>
             </Link>
@@ -142,7 +142,7 @@ export const TopBar: React.FC<TopBarProps> = ({
                   : 'text-muted hover:text-text hover:bg-surface-2'
               }`}
             >
-              Mu'alliflar
+              Mualliflar
             </Link>
           </nav>
 

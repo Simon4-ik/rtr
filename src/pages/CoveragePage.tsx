@@ -29,7 +29,7 @@ export const CoveragePage: React.FC = () => {
             Kiberxavfsizlik fani o'quv dasturi qamrov matritsasi
           </h1>
           <p className="text-xs sm:text-sm text-muted max-w-3xl leading-relaxed">
-            Modul kodi: <strong>TD-50610401</strong> (60 soat, 30 para). Har bir paraning ON1–ON4 ta'limiy natijalariga, tasdiqlangan pedagogik metodlarga hamda 9 ta raqamli didaktik komponentlarga mosligi monitoringi.
+            Modul kodi: <strong>TD-50610401</strong> (60 soat, 30 ta mavzu). Har bir mavzuning ON1–ON4 ta'limiy natijalariga, tasdiqlangan pedagogik metodlarga hamda 9 ta raqamli ta'lim resursi (RTK) komponentlariga mosligi monitoringi.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export const CoveragePage: React.FC = () => {
                 {on.code}
               </span>
               <span className="text-[11px] font-bold text-success">
-                {on.paraCount} ta para
+                {on.paraCount} ta mavzu
               </span>
             </div>
             <h4 className="font-bold text-xs text-text leading-snug">{on.title}</h4>
@@ -68,13 +68,13 @@ export const CoveragePage: React.FC = () => {
             <thead>
               <tr className="border-b border-border bg-surface-2 text-[11px] font-bold text-muted uppercase tracking-wider">
                 <th className="py-3 px-3 w-12 text-center">№</th>
-                <th className="py-3 px-4 min-w-[220px]">Para mavzusi</th>
+                <th className="py-3 px-4 min-w-[220px]">Mavzu nomi</th>
                 <th className="py-3 px-2 text-center w-12">ON1</th>
                 <th className="py-3 px-2 text-center w-12">ON2</th>
                 <th className="py-3 px-2 text-center w-12">ON3</th>
                 <th className="py-3 px-2 text-center w-12">ON4</th>
                 <th className="py-3 px-4 min-w-[180px]">Metodlar</th>
-                <th className="py-3 px-3 text-center min-w-[140px]">9 ta Tab Resurslari</th>
+                <th className="py-3 px-3 text-center min-w-[140px]">9 ta Resurs (RTK)</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
@@ -113,7 +113,7 @@ export const CoveragePage: React.FC = () => {
                     <td className="py-2.5 px-3 text-center">
                       <span className="inline-flex items-center gap-1 font-mono text-[10px] font-bold text-success bg-success/15 px-2 py-0.5 rounded">
                         <Check className="h-3 w-3" />
-                        <span>To'liq 9/9</span>
+                        <span>To'liq 9/9 (RTK)</span>
                       </span>
                     </td>
                   </tr>

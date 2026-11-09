@@ -70,7 +70,7 @@ export const BottomTabBar: React.FC<BottomTabBarProps> = ({ onOpenMundarija }) =
           }`}
         >
           <Users className="h-4 w-4 mb-0.5" />
-          <span>Mu'allif</span>
+          <span>Muallif</span>
         </Link>
       </nav>
     </div>

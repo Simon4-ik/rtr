@@ -53,4 +53,3 @@ Get-FileHash -Path .\hujjat.txt -Algorithm SHA256
 1. Hisoblangan ikkita xesh qiymatini taqqoslab ko'rsating.
 2. Nima uchun oddiy MD5 yoki SHA-1 zamonaviy kiberxavfsizlikda yaxlitlik tekshiruvi uchun tavsiya etilmasligini yozma asoslang.
 3. CIA modeliga ko'ra, xesh-funksiyalar xavfsizlikning qaysi ustunini ta'minlaydi?
-

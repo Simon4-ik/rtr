@@ -60,7 +60,7 @@ export const ResultsPage: React.FC = () => {
             O'zlashtirish va Natijalar
           </h1>
           <p className="text-xs sm:text-sm text-muted mt-1 max-w-2xl">
-            Modul bo'yicha paralar, oraliq testlar va ON1–ON4 ta'limiy natijalari bo'yicha shaxsiy ko'rsatkichlaringiz.
+            Modul bo'yicha mavzular, oraliq testlar va ON1–ON4 ta'limiy natijalari bo'yicha shaxsiy ko'rsatkichlaringiz.
           </p>
         </div>
 
@@ -109,7 +109,7 @@ export const ResultsPage: React.FC = () => {
           </div>
 
           <h3 className="mt-4 font-bold text-base text-text">
-            {completedCount} / 30 para yakunlandi
+            {completedCount} / 30 ta mavzu yakunlandi
           </h3>
           <p className="text-xs text-muted mt-1">
             {progressPercent >= 100
@@ -126,7 +126,7 @@ export const ResultsPage: React.FC = () => {
               {quizEntries.length > 0 ? `${quizAvg}%` : '—'}
             </p>
             <p className="text-[11px] text-muted">
-              {quizEntries.length} ta para bo'yicha test topshirildi
+              {quizEntries.length} ta mavzu bo'yicha test topshirildi
             </p>
           </div>
 
@@ -141,7 +141,7 @@ export const ResultsPage: React.FC = () => {
           <div className="rounded-card border border-border bg-surface p-5 shadow-card space-y-1 sm:col-span-2">
             <span className="text-xs text-muted">Eng so'nggi faollik</span>
             <p className="text-sm font-bold text-text">
-              {progress.lastVisitedPara}-para ({progress.lastVisitedTab} bo'limi)
+              {progress.lastVisitedPara}-mavzu ({progress.lastVisitedTab} bo'limi)
             </p>
             <p className="text-[11px] text-muted">
               Tizim siz to'xtagan joyni avtomatik eslab qoladi.
@@ -228,7 +228,7 @@ export const ResultsPage: React.FC = () => {
               <h3 className="font-bold text-base text-text">Progressni tozalash</h3>
             </div>
             <p className="text-xs text-muted leading-relaxed">
-              Haqiqatan ham barcha o'zlashtirilgan paralar va test natijalarini boshlang'ich holatga qaytarmoqchimisiz? Ushbu amalni bekor qilib bo'lmaydi.
+              Haqiqatan ham barcha o'zlashtirilgan mavzular va test natijalarini boshlang'ich holatga qaytarmoqchimisiz? Ushbu amalni bekor qilib bo'lmaydi.
             </p>
             <div className="flex justify-end gap-2 pt-2">
               <button

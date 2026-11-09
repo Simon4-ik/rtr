@@ -121,7 +121,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({ tests, paraNumber, onFin
 
           <p className="text-xs sm:text-sm text-muted">
             {passed
-              ? "Siz ushbu para bo'yicha tayanch kompetensiyalarni to'liq o'zlashtirdingiz."
+              ? "Siz ushbu mavzu bo'yicha tayanch kompetensiyalarni to'liq o'zlashtirdingiz."
               : "Natijani oshirish uchun ma'ruza matnini qayta ko'rib chiqib, testni takrorlang."}
           </p>
 

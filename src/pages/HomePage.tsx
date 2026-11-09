@@ -18,7 +18,12 @@ import {
   ShieldAlert,
   Lock,
   Activity,
-  AlertTriangle
+  AlertTriangle,
+  GraduationCap,
+  Lightbulb,
+  PlayCircle,
+  Presentation,
+  BookMarked
 } from 'lucide-react';
 import { ModuleInfo, ParaSummary, OutcomeItem } from '../types';
 import { getModuleInfo, getParasIndex, getOutcomes } from '../services/contentService';
@@ -151,7 +156,7 @@ export const HomePage: React.FC = () => {
           <div className="pt-4 border-t border-border grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div>
               <p className="text-2xl font-extrabold text-text font-mono">30</p>
-              <p className="text-xs text-muted">Para mashg'ulot</p>
+              <p className="text-xs text-muted">Mavzu mashg'uloti</p>
             </div>
             <div>
               <p className="text-2xl font-extrabold text-accent font-mono">60</p>
@@ -174,7 +179,143 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 2. O'QITISH NATIJALARI (ON1–ON4) */}
+      {/* 2. RAQAMLI TA'LIM RESURSI NIMA? (RTR & RTK STANDARTLAR BLOKI) */}
+      <section className="space-y-6 rounded-3xl border border-border bg-surface p-6 sm:p-8 shadow-card">
+        <div>
+          <div className="inline-flex items-center gap-2 rounded-chip bg-accent-soft px-3 py-1 font-mono text-xs font-bold text-accent">
+            <Award className="h-4 w-4" />
+            <span>Kasbiy ta'limni rivojlantirish instituti (ipitvet.uz) me'yori</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-text tracking-tight mt-2">
+            Raqamli ta'lim resursi nima?
+          </h2>
+          <p className="text-xs sm:text-sm text-muted mt-1 max-w-2xl">
+            Modul ta'limiy standartiga muvofiq resurs (RTR) va raqamli kontent (RTK) tuzilmasi hamda uning asosiy komponentlari:
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          {/* Chap ustun: RTR va RTK ta'riflari */}
+          <div className="lg:col-span-4 flex flex-col justify-between space-y-4">
+            {/* RTR Karta */}
+            <div className="rounded-2xl bg-gradient-to-br from-[#123048] to-[#0d2235] p-5 text-white shadow-lg flex-1 flex flex-col justify-center space-y-2.5 border border-cyan-800/40">
+              <div className="flex items-center gap-2">
+                <span className="font-extrabold text-base tracking-wide text-amber-400 font-mono">
+                  RTR — resurs
+                </span>
+              </div>
+              <p className="text-xs text-slate-200 leading-relaxed">
+                Bir kasb (mutaxassislik) o'quv rejasi asosida aniq bir modulning o'qitish natijalariga ko'ra shakllantirilgan mavzularni qamrab olgan raqamli ta'lim kontentlari to'plami.
+              </p>
+            </div>
+
+            {/* RTK Karta */}
+            <div className="rounded-2xl border-2 border-accent/40 bg-surface-2/60 p-5 shadow-sm flex-1 flex flex-col justify-center space-y-2.5">
+              <div className="flex items-center gap-2">
+                <span className="font-extrabold text-base tracking-wide text-accent font-mono">
+                  RTK — kontent
+                </span>
+              </div>
+              <p className="text-xs text-muted leading-relaxed">
+                Modulga ajratilgan soat doirasida, mavzular bo'yicha o'quv jarayonida foydalanish uchun raqamli shaklda taqdim etilgan material.
+              </p>
+            </div>
+          </div>
+
+          {/* O'ng ustun: 8 ta rasmiy komponent (2x4 grid) */}
+          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            {/* 1. Mavzular ro'yxati */}
+            <div className="flex items-center gap-3.5 rounded-xl border border-border bg-surface-2/40 p-3.5 hover:border-accent/40 transition-colors">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <BookOpen className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-sm font-bold text-text">Mavzular ro'yxati</h4>
+                <p className="text-xs text-muted truncate">o'qitish natijalari asosida</p>
+              </div>
+            </div>
+
+            {/* 2. Ma'ruza matni */}
+            <div className="flex items-center gap-3.5 rounded-xl border border-border bg-surface-2/40 p-3.5 hover:border-accent/40 transition-colors">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <GraduationCap className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-sm font-bold text-text">Ma'ruza matni</h4>
+                <p className="text-xs text-muted truncate">nazariy va amaliy mashg'ulotlar</p>
+              </div>
+            </div>
+
+            {/* 3. O'qitish metodlari */}
+            <div className="flex items-center gap-3.5 rounded-xl border border-border bg-surface-2/40 p-3.5 hover:border-accent/40 transition-colors">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <Lightbulb className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-sm font-bold text-text">O'qitish metodlari</h4>
+                <p className="text-xs text-muted truncate">qo'llaniladigan metodlar ro'yxati</p>
+              </div>
+            </div>
+
+            {/* 4. Media materiallar */}
+            <div className="flex items-center gap-3.5 rounded-xl border border-border bg-surface-2/40 p-3.5 hover:border-accent/40 transition-colors">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <PlayCircle className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-sm font-bold text-text">Media materiallar</h4>
+                <p className="text-xs text-muted truncate">audio, video, animatsiya</p>
+              </div>
+            </div>
+
+            {/* 5. Ko'rgazmali materiallar */}
+            <div className="flex items-center gap-3.5 rounded-xl border border-border bg-surface-2/40 p-3.5 hover:border-accent/40 transition-colors">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <Search className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-sm font-bold text-text">Ko'rgazmali materiallar</h4>
+                <p className="text-xs text-muted truncate">didaktik vositalar</p>
+              </div>
+            </div>
+
+            {/* 6. Taqdimot materiallari */}
+            <div className="flex items-center gap-3.5 rounded-xl border border-border bg-surface-2/40 p-3.5 hover:border-accent/40 transition-colors">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <Presentation className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-sm font-bold text-text">Taqdimot materiallari</h4>
+                <p className="text-xs text-muted truncate">ppt, pptx, pdf, jpg, png</p>
+              </div>
+            </div>
+
+            {/* 7. Baholash-savollari */}
+            <div className="flex items-center gap-3.5 rounded-xl border border-border bg-surface-2/40 p-3.5 hover:border-accent/40 transition-colors">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <CheckCircle2 className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-sm font-bold text-text">Baholash-savollari</h4>
+                <p className="text-xs text-muted truncate">savollar, topshiriqlar, testlar</p>
+              </div>
+            </div>
+
+            {/* 8. Glossariy */}
+            <div className="flex items-center gap-3.5 rounded-xl border border-border bg-surface-2/40 p-3.5 hover:border-accent/40 transition-colors">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent">
+                <BookMarked className="h-5 w-5" />
+              </div>
+              <div className="min-w-0">
+                <h4 className="text-sm font-bold text-text">Glossariy</h4>
+                <p className="text-xs text-muted truncate">atamalar lug'ati</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. O'QITISH NATIJALARI (ON1–ON4) */}
       <section className="space-y-4">
         <div>
           <h2 className="text-xl sm:text-2xl font-extrabold text-text tracking-tight">
@@ -199,7 +340,7 @@ export const HomePage: React.FC = () => {
                       {on.code}
                     </span>
                     <span className="text-[11px] font-mono font-bold text-muted">
-                      {on.paraCount} ta para
+                      {on.paraCount} ta mavzu
                     </span>
                   </div>
 
@@ -258,15 +399,15 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. MUNDARIJA: 30 PARA GRID */}
+      {/* 5. MUNDARIJA: 30 MAVZU GRID */}
       <section id="mundarija-section" className="space-y-6 pt-2">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-border pb-4">
           <div>
             <h2 className="text-xl sm:text-2xl font-extrabold text-text tracking-tight">
-              Mundarija (30 para)
+              Mundarija (30 ta mavzu)
             </h2>
             <p className="text-xs text-muted mt-0.5">
-              Har bir para 9 ta tabdan iborat (Maqsad, Ma'ruza, Metodlar, Video, Taqdimot, Didaktik, Amaliyot, Nazorat, Glossariy).
+              Har bir mavzu rasmiy standartdagi 9 ta resurs komponentidan iborat (Mavzular ro'yxati, Ma'ruza matni, O'qitish metodlari, Media materiallar, Ko'rgazmali materiallar, Taqdimot materiallari, Amaliy mashg'ulotlar, Baholash-savollari, Glossariy).
             </p>
           </div>
 
@@ -278,7 +419,7 @@ export const HomePage: React.FC = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Para qidirish..."
+                placeholder="Mavzu qidirish..."
                 className="w-48 sm:w-60 rounded-btn border border-border bg-surface pl-8 pr-3 py-1.5 text-xs text-text placeholder-muted focus:border-accent focus:outline-none"
               />
             </div>
@@ -322,7 +463,7 @@ export const HomePage: React.FC = () => {
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="font-mono text-xs font-bold text-accent bg-accent-soft px-2.5 py-0.5 rounded-chip border border-accent/20">
-                      #{String(para.number).padStart(2, '0')}-PARA
+                      #{String(para.number).padStart(2, '0')}-MAVZU
                     </span>
 
                     <div className="flex items-center gap-1.5">
@@ -354,7 +495,7 @@ export const HomePage: React.FC = () => {
                 <div className="mt-4 pt-3 border-t border-border flex items-center justify-between text-[11px] text-muted">
                   <span className="flex items-center gap-1">
                     <Clock className="h-3.5 w-3.5" />
-                    <span>2 soat • 9 tab</span>
+                    <span>2 soat • 9 ta resurs</span>
                   </span>
 
                   <div className="flex items-center gap-2">

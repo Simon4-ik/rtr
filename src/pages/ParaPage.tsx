@@ -32,23 +32,40 @@ import { LabSimulator } from '../components/LabSimulator';
 import { QuizEngine } from '../components/QuizEngine';
 
 const TABS: TabConfig[] = [
-  { id: 'maqsad', label: 'Maqsad', description: 'O\'quv maqsadi va natijalari' },
-  { id: 'maruza', label: 'Ma\'ruza', description: 'Calibri 14pt davlat standarti' },
-  { id: 'metodlar', label: 'Metodlar', description: 'Interaktiv o\'qitish bosqichlari' },
-  { id: 'video', label: 'Video', description: '720p HD mahalliy video dars' },
-  { id: 'taqdimot', label: 'Taqdimot', description: 'Slaydlar va materiallar' },
-  { id: 'didaktik', label: 'Didaktik', description: 'Sxemalar va infografikalar' },
-  { id: 'amaliyot', label: 'Amaliyot', description: 'Laboratoriya simulyatori' },
-  { id: 'nazorat', label: 'Nazorat', description: 'Test va nazorat savollari' },
-  { id: 'glossariy', label: 'Glossariy', description: 'Tayanch atamalar lug\'ati' },
+  { id: 'maqsad', label: "Mavzular ro'yxati", description: "O'qitish natijalari asosida" },
+  { id: 'maruza', label: "Ma'ruza matni", description: "Nazariy va amaliy mashg'ulotlar" },
+  { id: 'metodlar', label: "O'qitish metodlari", description: "Qo'llaniladigan metodlar ro'yxati" },
+  { id: 'video', label: "Media materiallar", description: "Audio, video, animatsiya" },
+  { id: 'didaktik', label: "Ko'rgazmali materiallar", description: "Didaktik vositalar" },
+  { id: 'taqdimot', label: "Taqdimot materiallari", description: "ppt, pptx, pdf, jpg, png" },
+  { id: 'amaliyot', label: "Amaliy mashg'ulotlar", description: "Laboratoriya simulyatori" },
+  { id: 'nazorat', label: "Baholash-savollari", description: "Savollar, topshiriqlar, testlar" },
+  { id: 'glossariy', label: "Glossariy", description: "Atamalar lug'ati" },
 ];
+
+const TAB_ALIASES: Record<string, TabId> = {
+  'mavzular-royxati': 'maqsad',
+  'maruza-matni': 'maruza',
+  'oqitish-metodlari': 'metodlar',
+  'media-materiallar': 'video',
+  'korgazmali-materiallar': 'didaktik',
+  'taqdimot-materiallari': 'taqdimot',
+  'amaliy-mashgulotlar': 'amaliyot',
+  'baholash-savollari': 'nazorat',
+};
+
+const resolveTabId = (id?: string): TabId => {
+  if (!id) return 'maqsad';
+  const resolved = TAB_ALIASES[id] || id;
+  return TABS.some((t) => t.id === resolved) ? (resolved as TabId) : 'maqsad';
+};
 
 export const ParaPage: React.FC = () => {
   const { paraId = 'para-01', tabId } = useParams<{ paraId: string; tabId?: string }>();
   const navigate = useNavigate();
 
   const paraNum = parseInt(paraId.replace('para-', ''), 10) || 1;
-  const initialTab: TabId = (tabId && TABS.some((t) => t.id === tabId)) ? (tabId as TabId) : 'maqsad';
+  const initialTab: TabId = resolveTabId(tabId);
 
   const [activeTab, setActiveTab] = useState<TabId>(initialTab);
   const [paraData, setParaData] = useState<ParaDataOfficial | null>(null);
@@ -80,9 +97,10 @@ export const ParaPage: React.FC = () => {
 
   // Sync activeTab when tabId in URL changes
   useEffect(() => {
-    if (tabId && TABS.some((t) => t.id === tabId)) {
-      setActiveTab(tabId as TabId);
-      const updated = markTabVisited(paraNum, tabId as TabId);
+    if (tabId) {
+      const resolved = resolveTabId(tabId);
+      setActiveTab(resolved);
+      const updated = markTabVisited(paraNum, resolved);
       setProgress(updated);
     }
   }, [tabId, paraNum]);
@@ -124,7 +142,7 @@ export const ParaPage: React.FC = () => {
             <Link to="/" className="hover:text-accent transition-colors">Bosh sahifa</Link>
             <span>/</span>
             <span className="font-semibold text-text">
-              {paraNum}-para
+              {paraNum}-mavzu
             </span>
           </div>
 
@@ -156,7 +174,7 @@ export const ParaPage: React.FC = () => {
           <div className="space-y-2">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-chip bg-accent-soft px-3 py-0.5 font-mono text-xs font-bold text-accent border border-accent/20">
-                #{String(paraNum).padStart(2, '0')}-PARA
+                #{String(paraNum).padStart(2, '0')}-MAVZU
               </span>
 
               {/* Outcomes chips */}
@@ -217,7 +235,7 @@ export const ParaPage: React.FC = () => {
             </div>
             <div>
               <p className="text-xs font-bold text-text">O'zlashtirish</p>
-              <p className="text-[10px] text-muted">9 ta tabdan {completedTabsCount} tasi ko'rildi</p>
+              <p className="text-[10px] text-muted">9 ta resursdan {completedTabsCount} tasi ko'rildi</p>
             </div>
           </div>
         </div>
@@ -227,7 +245,7 @@ export const ParaPage: React.FC = () => {
       <div className="sticky top-14 z-30 -mx-4 sm:-mx-6 px-4 sm:px-6 bg-bg/95 backdrop-blur-md border-b border-border py-1.5 print:hidden">
         <nav
           className="flex space-x-1 sm:space-x-2 overflow-x-auto pb-1 scrollbar-none snap-x"
-          aria-label="Para bo'limlari"
+          aria-label="Mavzu bo'limlari"
         >
           {TABS.map((tab) => {
             const isTabActive = activeTab === tab.id;
@@ -237,6 +255,7 @@ export const ParaPage: React.FC = () => {
                 key={tab.id}
                 type="button"
                 onClick={() => handleTabChange(tab.id)}
+                title={`${tab.label} (${tab.description})`}
                 className={`relative shrink-0 snap-start rounded-btn px-3.5 py-2 text-xs sm:text-sm font-bold transition-colors ${
                   isTabActive
                     ? 'text-accent'
@@ -261,16 +280,19 @@ export const ParaPage: React.FC = () => {
 
       {/* 3. Tab Contents Area */}
       <main className="min-h-[420px]">
-        {/* Tab 1: Maqsad */}
+        {/* Tab 1: Mavzular ro'yxati (o'qitish natijalari asosida) */}
         {activeTab === 'maqsad' && (
           <div className="rounded-card border border-border bg-surface p-6 sm:p-8 shadow-card space-y-6">
             <div className="border-b border-border pb-4">
               <span className="rounded-chip bg-accent-soft px-3 py-1 font-mono text-xs font-bold text-accent">
-                O'quv maqsadi (Goal)
+                1. Mavzular ro'yxati • O'qitish natijalari asosida
               </span>
               <h2 className="text-xl sm:text-2xl font-extrabold text-text mt-3">
-                {paraData.goal}
+                {paraData.title}
               </h2>
+              <p className="text-xs sm:text-sm text-muted mt-2">
+                <strong className="text-text">O'quv maqsadi:</strong> {paraData.goal}
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -322,7 +344,12 @@ export const ParaPage: React.FC = () => {
           <VideoPlayer video={paraData.video} paraNumber={paraData.id} />
         )}
 
-        {/* Tab 5: Taqdimot */}
+        {/* Tab 5: Ko'rgazmali materiallar (didaktik vositalar) */}
+        {activeTab === 'didaktik' && (
+          <DidacticGallery items={paraData.didactic} paraNumber={paraData.id} />
+        )}
+
+        {/* Tab 6: Taqdimot materiallari (ppt, pptx, pdf, jpg, png) */}
         {activeTab === 'taqdimot' && (
           <SlideViewer
             slidesCount={paraData.slides.count}
@@ -331,19 +358,14 @@ export const ParaPage: React.FC = () => {
           />
         )}
 
-        {/* Tab 6: Didaktik */}
-        {activeTab === 'didaktik' && (
-          <DidacticGallery items={paraData.didactic} paraNumber={paraData.id} />
-        )}
-
-        {/* Tab 7: Amaliyot (Task card, checklist, interactive simulator) */}
+        {/* Tab 7: Amaliy mashg'ulotlar (Laboratoriya simulyatori) */}
         {activeTab === 'amaliyot' && (
           <div className="space-y-6">
             {/* Practical Task Card */}
             <div className="rounded-card border border-border bg-surface p-6 shadow-card space-y-4">
               <div className="flex items-center justify-between">
                 <span className="rounded-chip bg-accent-soft px-3 py-1 font-mono text-xs font-bold text-accent">
-                  Amaliy laboratoriya topshirig'i
+                  Amaliy laboratoriya mashg'uloti va topshiriq
                 </span>
                 <span className="text-xs text-muted font-mono">Bajarish vaqti: ~30 daqiqa</span>
               </div>
@@ -379,16 +401,21 @@ export const ParaPage: React.FC = () => {
           </div>
         )}
 
-        {/* Tab 8: Nazorat (Accordion questions, QuizEngine, Practice tasks) */}
+        {/* Tab 8: Baholash-savollari (Savollar, topshiriqlar, testlar) */}
         {activeTab === 'nazorat' && (
           <div className="space-y-8">
             {/* 1. Review Questions as Accordion */}
             {paraData.reviewQuestions && paraData.reviewQuestions.length > 0 && (
               <div className="rounded-card border border-border bg-surface p-6 shadow-card space-y-4">
-                <h3 className="text-base font-bold text-text flex items-center gap-2">
-                  <HelpCircle className="h-4 w-4 text-accent" />
-                  <span>Mavzu yuzasidan takrorlash savollari (Akkordeon)</span>
-                </h3>
+                <div className="border-b border-border pb-3">
+                  <span className="rounded-chip bg-accent-soft px-3 py-1 font-mono text-xs font-bold text-accent">
+                    Baholash va o'zlashtirishni tekshirish vositalari
+                  </span>
+                  <h3 className="text-base font-bold text-text mt-2 flex items-center gap-2">
+                    <HelpCircle className="h-4 w-4 text-accent" />
+                    <span>Mavzu yuzasidan mustahkamlovchi nazorat savollari (Akkordeon)</span>
+                  </h3>
+                </div>
 
                 <div className="space-y-2 pt-1">
                   {paraData.reviewQuestions.map((question, idx) => {
@@ -450,7 +477,7 @@ export const ParaPage: React.FC = () => {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-card border border-border bg-surface p-5 shadow-card">
               <div>
                 <h3 className="font-bold text-base text-text">
-                  {paraData.id}-para bo'yicha tayanch atamalar ({paraData.glossary.length} ta)
+                  {paraData.id}-mavzu bo'yicha tayanch atamalar ({paraData.glossary.length} ta)
                 </h3>
                 <p className="text-xs text-muted mt-0.5">
                   Ushbu mashg'ulotda o'rganilgan barcha maxsus terminologiyalar.
@@ -490,7 +517,7 @@ export const ParaPage: React.FC = () => {
         )}
       </main>
 
-      {/* 4. Sticky Bottom Bar: Oldingi para / Keyingi para */}
+      {/* 4. Sticky Bottom Bar: Oldingi mavzu / Keyingi mavzu */}
       <div className="sticky bottom-0 z-20 -mx-4 sm:-mx-6 px-4 sm:px-6 py-3 bg-surface/90 backdrop-blur border-t border-border flex items-center justify-between print:hidden">
         {prevParaId ? (
           <Link
@@ -498,12 +525,12 @@ export const ParaPage: React.FC = () => {
             className="inline-flex items-center gap-2 rounded-btn border border-border bg-surface px-4 py-2 text-xs font-bold text-text hover:bg-surface-2 transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
-            <span>Oldingi para</span>
+            <span>Oldingi mavzu</span>
           </Link>
         ) : <div />}
 
         <div className="text-xs font-mono text-muted hidden sm:block">
-          {paraNum} / 30 para
+          {paraNum} / 30 ta mavzu
         </div>
 
         {nextParaId ? (
@@ -511,7 +538,7 @@ export const ParaPage: React.FC = () => {
             to={`/para/${nextParaId}`}
             className="inline-flex items-center gap-2 rounded-btn bg-accent px-4 py-2 text-xs font-bold text-white shadow-sm hover:bg-accent-hover transition-colors"
           >
-            <span>Keyingi para</span>
+            <span>Keyingi mavzu</span>
             <ArrowRight className="h-4 w-4" />
           </Link>
         ) : <div />}

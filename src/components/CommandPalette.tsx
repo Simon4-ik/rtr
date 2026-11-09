@@ -39,10 +39,10 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
         { type: 'page', title: 'O\'zlashtirish va Natijalar (Progress)', path: '/results' },
         { type: 'page', title: 'Qamrov matritsasi (Coverage for Jury)', path: '/coverage' },
         { type: 'page', title: 'Global A–Z Glossariy', path: '/glossary' },
-        { type: 'page', title: "Mu'alliflar (Nozimjonov M., Sobirov E.)", path: '/authors' },
+        { type: 'page', title: 'Mualliflar (Nozimjonov M., Sobirov E.)', path: '/authors' },
         ...paras.slice(0, 5).map((p) => ({
           type: 'para',
-          title: `${p.number}-para. ${p.title}`,
+          title: `${p.number}-mavzu. ${p.title}`,
           path: `/para/${p.id}`,
           badge: p.section,
         })),
@@ -61,7 +61,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
     ) {
       matchedPages.push({
         type: 'page',
-        title: "Mu'alliflar: Nozimjonov M., Sobirov E.",
+        title: 'Mualliflar: Nozimjonov M., Sobirov E.',
         path: '/authors',
         badge: 'RTR Mualliflari',
       });
@@ -72,7 +72,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
       .slice(0, 6)
       .map((p) => ({
         type: 'para',
-        title: `${p.number}-para. ${p.title}`,
+        title: `${p.number}-mavzu. ${p.title}`,
         path: `/para/${p.id}`,
         badge: p.section,
       }));
@@ -142,7 +142,7 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
               setQuery(e.target.value);
               setSelectedIndex(0);
             }}
-            placeholder="Paralar, atamalar yoki sahifalarni qidirish..."
+            placeholder="Mavzular, atamalar yoki sahifalarni qidirish..."
             className="w-full bg-transparent text-sm placeholder-muted focus:outline-none"
           />
           <kbd className="hidden sm:inline-block rounded bg-surface-2 px-1.5 py-0.5 text-[11px] font-mono text-muted border border-border">
