@@ -141,41 +141,10 @@ export const LecturePaper: React.FC<LecturePaperProps> = ({ content, paraNumber,
               color: '#000000',
             }}
           >
-            {/* Academic Formal Header */}
-            <header className="mb-6 border-b border-gray-300 pb-4 text-center leading-tight">
-              <p className="text-[11pt] font-semibold uppercase tracking-wider text-gray-700 print:text-black">
-                O'zbekiston Respublikasi Oliy ta'lim, fan va innovatsiyalar vazirligi
-              </p>
-              <p className="text-[12pt] font-bold text-gray-900 print:text-black mt-1">
-                Kiberxavfsizlik va axborot texnologiyalari kafedrasi
-              </p>
-              <div className="mt-2 flex items-center justify-center gap-4 text-[10pt] text-gray-600 print:text-black italic">
-                <span>Modul kodi: TD-50610401</span>
-                <span>•</span>
-                <span>60 soatlik RTR</span>
-                <span>•</span>
-                <span>{paraNumber}-mavzu</span>
-              </div>
-            </header>
-
             {/* Lecture Markdown Content */}
             <div className="lecture-body text-justify">
               <MarkdownRenderer content={content} isLecture={true} />
             </div>
-
-            {/* Academic Formal Footer */}
-            <footer className="mt-12 pt-6 border-t border-gray-300 print:border-black text-[11pt] leading-tight">
-              <div className="flex justify-between items-end">
-                <div>
-                  <p className="font-semibold">Kafedra mudiri:</p>
-                  <p className="text-[10pt] text-gray-600 print:text-black">Kiberxavfsizlik kafedrasi</p>
-                </div>
-                <div className="text-right">
-                  <p className="font-semibold">Tuzuvchi:</p>
-                  <p className="text-[10pt] text-gray-600 print:text-black">Katta o'qituvchi / Assistent</p>
-                </div>
-              </div>
-            </footer>
           </article>
         </div>
       </div>

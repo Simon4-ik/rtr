@@ -261,14 +261,78 @@ function createPlaceholderOfficial(summary: ParaSummary): ParaDataOfficial {
   };
 }
 
+function getReferencesForTopic(summary: ParaSummary): string[] {
+  switch (summary.section) {
+    case 'Kriptografiya va PKI':
+      return [
+        "O'zbekiston Respublikasining «Elektron raqamli imzo to'g'risida»gi Qonuni, O'RQ-793-son, 12.10.2022 y.",
+        "O'z DSt 1092:2009. Axborot texnologiyasi. Kriptografik himoya. Ma'lumotlarni shifrlash algoritmi.",
+        "Ganiyev S.K. Kriptografik himoya usullari. – Toshkent: Fan va texnologiya, 2018. – 248 b.",
+        "Ferguson N., Schneier B., Kohno T. Cryptography Engineering: Design Principles and Practical Applications. – Wiley, 2010. – 384 p.",
+        "Stallings W. Cryptography and Network Security: Principles and Practice. – 8th Edition. Pearson, 2020. – 780 p.",
+        "RFC 5280. Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile."
+      ];
+    case 'Tarmoq xavfsizligi':
+      return [
+        "Kurose J.F., Ross K.W. Computer Networking: A Top-Down Approach. – 8th Edition. Pearson, 2021. – 800 p.",
+        "Stallings W. Network Security Essentials: Applications and Standards. – 6th Edition. Pearson, 2017. – 464 p.",
+        "NIST SP 800-94 Rev. 2. Guide to Intrusion Detection and Prevention Systems (IDPS). – NIST, 2021.",
+        "RFC 8446. The Transport Layer Security (TLS) Protocol Version 1.3. – IETF, 2018.",
+        "Yuldashev A.A. Tarmoq xavfsizligi va protokollar auditi. – Toshkent: Fan va texnologiya, 2022. – 216 b.",
+        "IEEE 802.11ax/WPA3 Specification. Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications."
+      ];
+    case 'Tizim va dasturlar':
+      return [
+        "OWASP Top 10:2021. The Ten Most Critical Web Application Security Risks. – Open Web Application Security Project, 2021.",
+        "Nemeth E., Snyder G., Hein T.R., Whaley B. UNIX and Linux System Administration Handbook. – 5th Edition. Addison-Wesley, 2017. – 1184 p.",
+        "Howard M., LeBlanc D. Writing Secure Code. – 2nd Edition. Microsoft Press, 2003. – 768 p.",
+        "NIST SP 800-63B. Digital Identity Guidelines: Authentication and Lifecycle Management. – NIST, 2020.",
+        "CIS Benchmarks. Center for Internet Security Configuration Guides for Operating Systems and Databases, 2023.",
+        "Karimov M.M. Axborot tizimlari va veb-ilovalarni himoyalash. – Toshkent: Fan va texnologiya, 2020. – 240 b."
+      ];
+    case 'Zaifliklar, bulut va OT':
+      return [
+        "NIST SP 800-145. The NIST Definition of Cloud Computing. – NIST Special Publication.",
+        "Vacca J.R. Cloud Security: Risks, Criticality and Solutions. – CRC Press, 2020. – 360 p.",
+        "NIST SP 800-82 Rev. 2. Guide to Industrial Control Systems (ICS) Security. – NIST, 2015.",
+        "NIST SP 800-61 Rev. 2. Computer Security Incident Handling Guide. – NIST, 2012.",
+        "ISO/IEC 27031:2011. Guidelines for information and communication technology readiness for business continuity.",
+        "Ganiyev S.K. Korporativ axborot tizimlari xavfsizligi monitoringi. – Toshkent: Aloqachi, 2021. – 208 b."
+      ];
+    case 'Hodisalar va amaliy yakun':
+      return [
+        "O'zbekiston Respublikasining «Kiberxavfsizlik to'g'risida»gi Qonuni, O'RQ-764-son, 15.04.2022 y.",
+        "NIST SP 800-115. Technical Guide to Information Security Testing and Assessment. – NIST.",
+        "Weidman G. Penetration Testing: A Hands-On Introduction to Hacking. – No Starch Press, 2014. – 528 p.",
+        "ISO/IEC 27037:2012. Guidelines for identification, collection, acquisition and preservation of digital evidence.",
+        "Casey E. Digital Evidence and Computer Crime: Forensic Science, Computers, and the Internet. – 3rd Edition. Academic Press, 2011. – 840 p.",
+        "MITRE ATT&CK® Enterprise Matrix. Adversarial Tactics, Techniques, and Common Knowledge. – attack.mitre.org, 2023."
+      ];
+    case 'Axborot xavfsizligi asoslari':
+    default:
+      return [
+        "O'zbekiston Respublikasining «Kiberxavfsizlik to'g'risida»gi Qonuni, O'RQ-764-son, 15.04.2022 y.",
+        "O'zbekiston Respublikasining «Axborotlashtirish to'g'risida»gi Qonuni, O'RQ-560-II, 11.12.2003 y.",
+        "Ganiyev S.K., Karimov M.M., Tashev K.A. Axborot xavfsizligi. Darslik. – Toshkent: Fan va texnologiya, 2019. – 380 b.",
+        "Yuldashev A.A., Karimov M.M. Kiberxavfsizlik asoslari. O'quv qo'llanma. – Toshkent: Aloqachi, 2021. – 264 b.",
+        "Stallings W. Computer Security: Principles and Practice. – 4th Edition. Pearson, 2018. – 832 p.",
+        "ISO/IEC 27001:2022. Information security, cybersecurity and privacy protection — Information security management systems — Requirements."
+      ];
+  }
+}
+
 function createPlaceholderLecture(summary: ParaSummary): string {
   const num = summary.number;
+  const references = getReferencesForTopic(summary);
+  const referencesMd = references.map((ref, idx) => `${idx + 1}. ${ref}`).join('\n');
+
   return `# ${num}-mavzu. ${summary.title}
 
 **Reja:**
 1. ${summary.title} bo'yicha tayanch tushunchalar va fanning maqsadi
 2. Asosiy tahdidlar, xavf-xatarlar va zaifliklar tahlili
 3. Zamonaviy himoya mexanizmlari va xalqaro tajriba
+4. Foydalanilgan adabiyotlar
 
 ---
 
@@ -296,5 +360,11 @@ Tizim mudofaasida yagona vositaga suyanish zamonaviy tahdidlar qarshisida samara
 3. Xost va operatsion tizim xavfsizligi (Hardening, EDR);
 4. Ma'lumotlarni shifrlash va zaxira nusxalash (Backup, DRP).
 
-**Xulosa.** «${summary.title}» mavzusi bo'yicha bilim va amaliy ko'nikmalarni egallash talabaga real ishlab chiqarish tizimlarida mustahkam mudofaa barpo etish va hodisalarga professional darajada javob berish imkonini yaratadi.`;
+**Xulosa.** «${summary.title}» mavzusi bo'yicha bilim va amaliy ko'nikmalarni egallash talabaga real ishlab chiqarish tizimlarida mustahkam mudofaa barpo etish va hodisalarga professional darajada javob berish imkonini yaratadi.
+
+---
+
+## 4. Foydalanilgan adabiyotlar
+
+${referencesMd}`;
 }

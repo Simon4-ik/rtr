@@ -4,6 +4,7 @@
 1. Kiberxavfsizlik tushunchasi va fanning maqsadi
 2. Fanning vazifalari
 3. Rivojlanish yoʻnalishlari va zamonaviy tendensiyalar
+4. Foydalanilgan adabiyotlar
 
 ---
 
@@ -53,3 +54,14 @@ Zamonaviy tendensiyalar orasida bulutli xizmatlarga oʻtish, mobil qurilmalar so
 Shuning uchun zamonaviy mudofaa tizimi bitta texnik vositaga tayanmaydi. U texnik choralar, tashkiliy qoidalar va xodimlarning xabardorligini birlashtiradi. Bu tizimli yondashuv «chuqurlashtirilgan himoya» (Defense in Depth) deb ataladi.
 
 **Xulosa.** Kiberxavfsizlik raqamli muhitda axborotning maxfiyligi, yaxlitligi va mavjudligini taʼminlaydi. Uni oʻrganish orqali mutaxassis tahdidlarni chuqur tahlil qiladi, mos himoya usullarini tanlaydi va barqaror, himoyalangan tizimlarni barpo etadi.
+
+---
+
+## 4. Foydalanilgan adabiyotlar
+
+1. Oʻzbekiston Respublikasining «Kiberxavfsizlik toʻgʻrisida»gi Qonuni, OʻRQ-764-son, 15.04.2022 y.
+2. Oʻzbekiston Respublikasining «Axborotlashtirish toʻgʻrisida»gi Qonuni, OʻRQ-560-II, 11.12.2003 y.
+3. Ganiyev S.K., Karimov M.M., Tashev K.A. Axborot xavfsizligi. Darslik. – Toshkent: Fan va texnologiya, 2019. – 380 b.
+4. Yuldashev A.A., Karimov M.M. Kiberxavfsizlik asoslari. Oʻquv qoʻllanma. – Toshkent: Aloqachi, 2021. – 264 b.
+5. Stallings W. Computer Security: Principles and Practice. – 4th Edition. Pearson, 2018. – 832 p.
+6. ISO/IEC 27001:2022. Information security, cybersecurity and privacy protection — Information security management systems — Requirements.
